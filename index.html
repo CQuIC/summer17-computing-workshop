@@ -4,20 +4,45 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+<h2>Schedule</h2>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<p>We tentatively plan to cover the following topics during our sessions:</p>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<ol>
+  <li>
+    May 19 at 1:30pm in PandA 30
+    <ol>
+      <li>Visualization (<a href="https://swcarpentry.github.io/visualization-novice/">swcarpentry lesson</a>)</li>
+      <li>Shell (<a href="http://swcarpentry.github.io/shell-novice/">swcarpentry lesson</a>)</li>
+      <li>Automation (<a href="http://swcarpentry.github.io/make-novice/">swcarpentry lesson</a>)</li>
+    </ol>
+  </li>
+  <li>
+    May 29&ndash;June 2
+    <ol>
+      <li>Git (individual)</li>
+      <li>Symbolic calculation</li>
+      <li>Parallelization</li>
+    </ol>
+  </li>
+  <li>
+    June 12&ndash;16
+    <ol>
+      <li>Git (remotes and collaboration)</li>
+      <li>Final project</li>
+    </ol>
+  </li>
+</ol>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<h2>Installation instructions</h2>
+
+<p>Software Carpentry has fairly detailed
+<a href="http://installation.software-carpentry.org/">installation
+instructions</a> available on their website.</p>
+
+<p>There are Python scripts available to verify that you have installed
+everything you need:
+<a href="https://github.com/CQuIC/installation-testing-scripts">
+https://github.com/CQuIC/installation-testing-scripts</a></p>
 
 </div>
