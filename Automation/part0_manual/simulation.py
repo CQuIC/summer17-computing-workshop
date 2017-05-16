@@ -18,6 +18,7 @@ tsteps = np.linspace(0, n_oscillations*np.pi, n_tsteps)
 # Get a random pure qubit state, parameterized by
 # the polar angle theta of the Bloch vector and the
 # azimuthal angle phi of the Bloch vector
+np.random.seed(1)
 theta = np.random.uniform(low=0, high=np.pi)
 phi = np.random.uniform(low=0, high=2*np.pi)
 
@@ -30,6 +31,10 @@ psi_0 = np.cos(theta/2) * qutip.basis(2, 0) + np.exp(1j*phi)*np.sin(theta/2) * q
 psi_t = qutip.mesolve(H, psi_0, tsteps, [], [])
 
 # Now, we will save the output to a file
+
+# Create simulation output directory
+if not os.path.isdir('output'):
+    os.mkdir('output')
 
 # Navigate to the location where to store output
 os.chdir('output')
