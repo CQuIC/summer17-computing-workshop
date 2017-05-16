@@ -3,6 +3,7 @@ import numpy as np
 import pickle as pkl
 import os
 import matplotlib.pyplot as plt
+import seaborn
 
 # Navigate to the directory containing the output of all the programs
 os.chdir('output')
@@ -53,20 +54,23 @@ os.chdir('graphics')
 
 # First we plot the expectation values of
 # sigmax, sigmay and sigmaz
-plt.plot(tsteps, exp_sigmax, color='b', label='$\\langle\\sigma_x\\rangle$')
-plt.plot(tsteps, exp_sigmay, color='r', label='$\\langle\\sigma_y\\rangle$')
-plt.plot(tsteps, exp_sigmaz, color='g', label='$\\langle\\sigma_z\\rangle$')         
+
+fig = plt.figure()
+ax = fig.add_axes([0, 0, 1, 1])
+ax.plot(tsteps, exp_sigmax, color='b', ls='--', marker='o', clip_on=False, label='$\\langle\\sigma_x\\rangle$')
+ax.plot(tsteps, exp_sigmay, color='r', ls='--', marker='o', clip_on=False, label='$\\langle\\sigma_y\\rangle$')
+ax.plot(tsteps, exp_sigmaz, color='g', ls='--', marker='o', clip_on=False, label='$\\langle\\sigma_z\\rangle$')
 
 # Make some space
-plt.ylim(-1, 1)
+ax.set_ylim([-1, 1])
 
 # Show the legend, add axis titles
-plt.xlabel('Time, $t / \\frac{1}{\\omega}$')
-plt.ylabel('Expecation value of $\\sigma$, $\\langle\\sigma\\rangle / \\frac{\hbar}{2}$')
-plt.legend(loc='best')
+ax.set_xlabel('Time, $t / \\frac{1}{\\omega}$')
+ax.set_ylabel('Expecation value of $\\sigma$, $\\langle\\sigma\\rangle / \\frac{\hbar}{2}$')
+ax.legend(loc='best', frameon=True, fancybox=True)
 
 # Save the plot
-plt.savefig('exp_sigma.eps', filetype='eps')
+fig.savefig('exp_sigma.pdf', filetype='pdf', bbox_inches='tight')
 plt.close()
 
 # Next we plot four steps in the rotation of the Bloch vector
@@ -86,4 +90,4 @@ sphere.add_points(a_0)
 sphere.add_states(psi_t.states[:n_tsteps_one_oscillation][::n_tsteps_skip])
 sphere.make_sphere()
 sphere.render()
-plt.savefig('bloch.eps', filetype='eps')
+plt.savefig('bloch.pdf', filetype='pdf', bbox_inches='tight')

@@ -74,10 +74,10 @@ arrays of numbers. To that end we make some graphics to show the
 evolution of the expectation values of Pauli operators and the Bloch 
 vector. This is done in the program `graphics.py`. `graphics.py` reads 
 the state as function of time from `psi_t.pkl` and the expectation 
-values from `exp_sigma.pkl`. The graphics are produced in `eps` format 
-in `bloch.eps` and `exp_sigma.eps`
+values from `exp_sigma.pkl`. The graphics are produced in `pdf` format 
+in `bloch.pdf` and `exp_sigma.pdf`
 
-Go through `exp_sigma.eps` and explore the plotting of the expectation 
+Go through `exp_sigma.pdf` and explore the plotting of the expectation 
 values and the Bloch vector. The former done use `matplotlib` and the 
 latter is done using the `qutip` library.
 
@@ -87,7 +87,7 @@ python3 graphics.py
 ```
 
 A directory called `graphics` is created inside `output` which has 
-`bloch.eps` and `exp_sigma.eps`.
+`bloch.pdf` and `exp_sigma.pdf`.
 
 As an exercise, change the Hamiltonian to something else.Thereafter run 
 all the programs in the appropriate order. You will get plots 
@@ -117,7 +117,7 @@ different steps in the computation and their dependencies.
 
 Each step is called a target, and everything it depends on it called a 
 dependency. Write your target, followed by a `:` , then list its 
-dependencies Note that there dependency on both a program (the program 
+dependencies. Note that there dependency on both a program (the program 
 to be run) and some data which a previous program would have generated.
 
 Here for simplicity, we do not create directories for the output of 
@@ -165,10 +165,16 @@ will include figures we produce using our programs. We will do this
 using a `Makefile` for the article which calls the `Makefile` we wrote 
 for our programs.
 
-To prepare a `pdf` from a `tex` file, we use `LaTeXmk -pdf`. This runs 
-`LaTeX` an appropriate number of times to ensure all references and 
-citations are handled. To this end we have a `Makefile` target in 
-`TeX/Makefile` called `article`.
+To prepare a `pdf` from a `tex` file, we use `pdflatex`. We run `pdflatex`
+twice ensure all references and citations are handled. To this end we have
+a `Makefile` target in `TeX/Makefile` called `spinprecession.pdf`, which has the
+following rules.
+
+```
+spinprecession.pdf: spinprecession.tex bloch.pdf exp_sigma.pdf
+	pdflatex spinprecession.tex
+	pdflatex spinprecession.tex
+```
 
 Now the article uses figures which the programs produce. We want 
 everything to be automated with minimum manual intervention. Therefore 
@@ -181,16 +187,16 @@ cp part1_make_intro/Makefile part2_make_recursive/Python/
 ```
 
 In the `Makefile` inside the `TeX` directory, we have a target 
-`bloch.eps` which depends on `../Python/bloch.eps`. The rule simply 
+`bloch.pdf` which depends on `../Python/bloch.pdf`. The rule simply 
 copies the file from the `Python` directory to the `TeX` directory. 
-Similarly, we have a target `exp_sigma.eps` which depends on 
-`../Python/exp_sigma.eps`. Again, the rule simply copies the file from 
+Similarly, we have a target `exp_sigma.pdf` which depends on 
+`../Python/exp_sigma.pdf`. Again, the rule simply copies the file from 
 the `Python` directory to the `TeX` directory.
 
-In order to create `../Python/bloch.eps` and `../Python/exp_sigma.eps`, 
+In order to create `../Python/bloch.pdf` and `../Python/exp_sigma.pdf`, 
 we need to run the programs. For this we have already written a 
 `Makefile` in part 1. All we have to do it use it. In the rules for 
-`../Python/bloch.eps` and `../Python/exp_sigma.eps`, invoke `make` 
+`../Python/bloch.pdf` and `../Python/exp_sigma.pdf`, invoke `make` 
 using the `Makefile` in the `Python` directory. If we run make inside 
 the `TeX` directory it use the `Makefile` in the `TeX` directory. In 
 order to run the `Makefile` in the `Python` directory we need to ask 
@@ -203,7 +209,7 @@ make -C ../Python
 
 This will run `make` using the `Makefile` in the `Python` directory and 
 produce the figures. Complete the rules for the targets 
-`../Python/bloch.eps` and `../Python/exp_sigma.eps`.
+`../Python/bloch.pdf` and `../Python/exp_sigma.pdf`.
 
 Finally we have the `clean` target. Note that we have to recursively 
 clean. Therefore, we need to invoke the other `Makefile` here. Note 
