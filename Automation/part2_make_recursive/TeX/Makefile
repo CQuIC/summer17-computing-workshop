@@ -24,7 +24,7 @@ exp_sigma.pdf: ../Python/exp_sigma.pdf
 ../Python/bloch.pdf:
 	echo "Recursively invoke make in ../Python."
 	#TODO Your command(s) here
-	
+
 # For this target, we need to recursively involve make
 # in the other directory, which will generate the figures
 # we need for our article.
@@ -40,7 +40,7 @@ clean: cleanlatex
 	echo "Recursively invoke the other make file here."
 	rm -rvf bloch.pdf
 	rm -rvf exp_sigma.pdf
-	
+
 # This is a target which removes all files created by the latex program.
 # For simplicity, we have defined a different target here. We could have put
 # all these commands under the target `clean'

@@ -11,8 +11,8 @@ particle in a magnetic field and see the spin precession. We will work
 in Schrodinger's picture and evolve the state of the particle. For
 simplicity, we consider a pure state. The programs doing the
 computations are already written. The computations involve a pipeline of
-several steps and in this lesson we will focus on how to automate
-running these steps.
+several stpdf and in this lesson we will focus on how to automate
+running these stpdf.
 
 The lesson has three parts: part 0, part 1 and part 2. In part 0, we
 will do everything manually, running all the computations in the
@@ -107,13 +107,13 @@ by `make` and we do not have to manually run each program.
 
 Before we starting writing the `Makefile`, we should understand the 
 dependencies in our computation. Each step of the computation depends 
-one or more other steps. Let us try to understand the dependencies of 
+one or more other stpdf. Let us try to understand the dependencies of 
 each step of computation on others.
 
 We need to run the simulation, before we perform the statistics. We 
 need to perform statistics, before we can prepare graphics. Before 
 writing the Makefile, let us draw a dependency flow chart showing the 
-different steps in the computation and their dependencies.
+different stpdf in the computation and their dependencies.
 
 Each step is called a target, and everything it depends on it called a 
 dependency. Write your target, followed by a `:` , then list its 
