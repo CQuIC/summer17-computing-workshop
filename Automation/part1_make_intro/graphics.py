@@ -3,6 +3,7 @@ import numpy as np
 import pickle as pkl
 import os
 import matplotlib.pyplot as plt
+import seaborn
 
 # Open the files containing the expectation values
 inputfile_sigma = open('exp_sigma.pkl', 'rb')
