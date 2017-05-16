@@ -38,6 +38,7 @@ exp_sigma.pdf: ../Python/exp_sigma.pdf
 # Makefile
 clean: cleanlatex
 	echo "Recursively invoke the other make file here."
+	#TODO Your command(s) here
 	rm -rvf bloch.pdf
 	rm -rvf exp_sigma.pdf
 

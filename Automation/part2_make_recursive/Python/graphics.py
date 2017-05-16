@@ -69,7 +69,6 @@ sphere.vector_color = ['b','r','g','#CC6600']
 a_0 = [exp_sigmax[0], exp_sigmay[0], exp_sigmaz[0]]
 sphere.add_points(a_0)
 
-
 sphere.add_states(psi_t.states[:n_tsteps_one_oscillation][::n_tsteps_skip])
 sphere.make_sphere()
 sphere.render()
