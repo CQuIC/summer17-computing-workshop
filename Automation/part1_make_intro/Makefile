@@ -15,7 +15,7 @@
 # which a previous program would have generated
 
 # <target>: <dependencies>
-
+# rule
 
 # Finally, there is one target that cleans up everything.
 # It is called `clean'. Here, we just delete all the
