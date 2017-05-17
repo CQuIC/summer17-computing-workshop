@@ -56,7 +56,7 @@ os.chdir('graphics')
 # sigmax, sigmay and sigmaz
 
 fig = plt.figure()
-ax = fig.add_axes([0, 0, 1, 1])
+ax =  fig.add_axes([0, 0, 1, 1])
 ax.plot(tsteps, exp_sigmax, color='b', ls='--', marker='o', clip_on=False, label='$\\langle\\sigma_x\\rangle$')
 ax.plot(tsteps, exp_sigmay, color='r', ls='--', marker='o', clip_on=False, label='$\\langle\\sigma_y\\rangle$')
 ax.plot(tsteps, exp_sigmaz, color='g', ls='--', marker='o', clip_on=False, label='$\\langle\\sigma_z\\rangle$')
