@@ -39,11 +39,25 @@ pickle protocol.
 Go through `simulation.py` and see how the state vector is computed at
 different times. Note the initial state and the Hamiltonian.
 
-Now run `simulation.py` using the following command. Note that we are 
-using python3.
+Now run `simulation.py` using the Python intepreter. Note that we are 
+using Python 3. On your system this could be `python` or `python3`. On 
+your system this could be `python` or `python3` or something else. The 
+command you run is as follows.
 
 ```
+python simulation.py
+```
+
+If your Python 3 interpreter is `python3`, then run `python3` instead, 
+as follows.
+```
 python3 simulation.py
+```
+
+If your Python 3 interpreter has a different name, say `foo`, run `foo`,
+as follows.
+```
+foo simulation.py
 ```
 
 A directory called `output` is created. There will be a directory inside
@@ -61,11 +75,15 @@ the pickle protocol.
 Go through `statistics.py` and see how the expectation values of the 
 Pauli operators are computed as functions of time.
 
-Now run `simulation.py` using the following command.
+Now run `simulation.py` using the Python intepreter. Recall that we are 
+using Python 3. On your system this could be `python` or `python3` or
+something else. 
+```
+python statistics.py
+```
 
-```
-python3 statistics.py
-```
+Again, use the appropriate name for your Python 3 interpreter as you 
+did earlier.
 
 A directory called `statistics` is create inside `output`, which has
 `exp_sigma_x.pkl`, `exp_sigma_y.pkl` and `exp_sigma_z.pkl`, which have
@@ -85,10 +103,14 @@ Go through `exp_sigma.pdf` and explore the plotting of the expectation
 values and the Bloch vector. The former done use `matplotlib` and the 
 latter is done using the `qutip` library.
 
-Now run `graphics.py` using the following command
+Now run `graphics.py`  using the Python intepreter. Recall that we are 
+using Python 3. On your system this could be `python` or `python3` or
+something else. 
 ```
-python3 graphics.py
+python graphics.py
 ```
+Again, use the appropriate name for your Python 3 interpreter as you 
+did earlier.
 
 A directory called `graphics` is created inside `output` which has 
 `bloch.pdf` and `exp_sigma.pdf`.
@@ -137,13 +159,16 @@ is a dependency of `exp_sigma.pkl`. Moreover, the program
 `exp_sigma.pkl` has two dependencies `statistics.py` and 
 `exp_sigma.pkl`.
 
-To produce `exp_sigma.pkl`, we use the `python3` interpreter as 
+To produce `exp_sigma.pkl`, we use the Python interpreter as 
 earlier. This is the "rule" to produce `psi_t.pkl`. This is written as 
 follows. Note that each line in the 'rule' starts with a `Tab`
 ```
 exp_sigma.pkl: statistics.py psi_t.pkl
-    python3 statistics.py
+    python statistics.py
 ```
+
+Again, use the appropriate name for your Python 3 interpreter as you 
+did earlier.
 
 If there is more than one dependency, we list them after the colon, 
 separated by spaces. 
