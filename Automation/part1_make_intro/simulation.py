@@ -18,6 +18,7 @@ tsteps = np.linspace(0, n_oscillations*np.pi, n_tsteps)
 # Get a random pure qubit state, parameterized by
 # the polar angle theta of the Bloch vector and the
 # azimuthal angle phi of the Bloch vector
+np.random.seed(1)
 theta = np.random.uniform(low=0, high=np.pi)
 phi = np.random.uniform(low=0, high=2*np.pi)
 
