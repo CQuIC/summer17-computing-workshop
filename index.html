@@ -4,20 +4,94 @@ layout: default
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+<h2>Schedule</h2>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+<p>We plan to cover the following topics during our sessions:</p>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+<ol>
+  <li>
+    May 19 at 1:30pm in PandA Room 4 (download files for this session <a href="files/session-1.zip">here</a>)
+    <ol>
+      <li>Visualization (<a href="https://swcarpentry.github.io/visualization-novice/">swcarpentry lesson</a>)</li>
+      <li>Shell (<a href="http://swcarpentry.github.io/shell-novice/">swcarpentry lesson</a>)</li>
+      <li>Automation (<a href="http://swcarpentry.github.io/make-novice/">swcarpentry lesson</a>)</li>
+    </ol>
+  </li>
+  <li>
+    May 29&ndash;June 2
+    <ol>
+      <li>Git (individual) (<a href="http://swcarpentry.github.io/git-novice/">swcarpentry lesson</a>)</li>
+      <li>Symbolic calculation</li>
+      <li>Parallelization (<a href="http://materials.jeremybejarano.com/MPIwithPython/index.html">tutorial</a>)</li>
+    </ol>
+  </li>
+  <li>
+    June 12&ndash;16
+    <ol>
+      <li>Git (remotes and collaboration)</li>
+      <li>Final project</li>
+    </ol>
+  </li>
+</ol>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+<h2>Installation instructions</h2>
+
+<p>We ask that you have installed the following software on your computer by
+Tuesday, May 16. If you run into installation difficulties, Travis, Qi, and
+Anupam will be available for help from
+12:30&ndash;2:30pm on Wednesday May 17. On Friday, May 19, <strong>we will
+assume you have successfully installed the following software</strong>:</p>
+
+<ol>
+<li><em>The "Scientific Python" software stack</em></li>
+<ol>
+  <li><a href="https://www.python.org/downloads/">Python 3</a></li>
+  <li><a href="http://jupyter.org/install.html">jupyter</a></li>
+  <li><a href="http://docs.scipy.org/doc/numpy/user/install.html">numpy</a></li>
+  <li><a href="http://www.scipy.org/Installing_SciPy">scipy</a></li>
+  <li><a href="http://pandas.pydata.org/pandas-docs/stable/install.html">pandas</a></li>
+  <li><a href="http://matplotlib.org/users/installing.html">matplotlib</a></li>
+</ol>
+
+<li><em>Several miscellaneous Python packages</em></li>
+<ol>
+  <li><a href="http://mpi4py.readthedocs.io/en/stable/install.html">mpi4py</a></li>
+  <li><a href="http://seaborn.pydata.org/installing.html">seaborn</a></li>
+  <li><a href="http://docs.sympy.org/dev/install.html">sympy</a></li>
+  <li><a href="ttp://docs.cython.org/src/quickstart/install.html">Cython</a></li>
+  <li><a href="http://qutip.org/docs/4.1/installation.html">qutip</a></li>
+</ol>
+
+<li><em>Several miscellaneous pieces of software</em></li>
+<ol>
+  <li><a href="https://www.latex-project.org/get/">LaTeX</a> (pdflatex and
+  bibtex)</li>
+  <li><a href="http://git-scm.com/downloads">git</a></li>
+  <li><a href="http://www.gnu.org/software/make/">make</a></li>
+  <li><a href="https://www.gnu.org/software/bash/">the Bash shell</a></li>
+</ol>
+</ol>
+
+<p><strong>NOTE</strong>: Software Carpentry has fairly detailed
+<a href="http://installation.software-carpentry.org/">installation
+instructions</a> available on their website that can provide a general view of
+the installation process (although they provide instructions for some software
+we won't need and don't include instruction for some software we will need).
+In particular, you can follow their instructions for the scientific Python
+stack, git, and the Bash shell.</p>
+
+<p><strong>NOTE</strong>: We recommend you use the "conda" package
+manager (which comes with the scientific Python stack) to install the
+other Python packages, if possible.</p>
+
+<p>There are Python scripts available to <strong>verify</strong> that you have
+installed everything you need:
+<a href="https://github.com/CQuIC/installation-testing-scripts">
+https://github.com/CQuIC/installation-testing-scripts</a>. You can download the scripts
+from the link and run them using your Bash shell. If the scripts run without any errors,
+congratulations - you are good to go! If you need
+help running the scripts, or run into problems, please come see us on Wednesday the 17th.</p>
+
+
 
 </div>
