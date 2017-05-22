@@ -61,16 +61,18 @@ plt.close()
 # using the functionality provided by the qutip library
 
 n_tsteps_one_oscillation = 32
-n_tsteps_skip = 8
 sphere = qutip.Bloch()
 sphere.sphere_alpha = 0.0
-sphere.vector_color = ['b','r','g','#CC6600']
+sphere.vector_color = seaborn.color_palette('husl', n_colors=n_tsteps_one_oscillation)
 
 # Mark the initial Bloch vector for reference
 a_0 = [exp_sigmax[0], exp_sigmay[0], exp_sigmaz[0]]
 sphere.add_points(a_0)
 
-sphere.add_states(psi_t.states[:n_tsteps_one_oscillation][::n_tsteps_skip])
+# Mark the next Bloch vector for reference of direction of motion
+a_1 = [exp_sigmax[1], exp_sigmay[1], exp_sigmaz[1]]
+sphere.add_points(a_1)
+
+sphere.add_states(psi_t.states[:n_tsteps_one_oscillation])
 sphere.make_sphere()
-sphere.render()
 plt.savefig('bloch.pdf', filetype='pdf', bbox_inches='tight')
