@@ -1,0 +1,796 @@
+Script started on Fri 19 May 2017 03:17:39 PM MDT
+]0;azaghal@Nogrod: ~/session-1azaghal@Nogrod:~/session-1$ asciinema rec --max-wait=2 ~/the-unix-shell.json
+[32m~ Asciicast recording started.[0m
+[32m~ Hit Ctrl-D or type "exit" to finish.[0m
+]0;azaghal@Nogrod: ~/session-1azaghal@Nogrod:~/session-1$ clear
+[3;J[H[2J]0;azaghal@Nogrod: ~/session-1azaghal@Nogrod:~/session-1$ pwd
+/home/azaghal/session-1
+]0;azaghal@Nogrod: ~/session-1azaghal@Nogrod:~/session-1$ pwd
+/home/azaghal/session-1
+]0;azaghal@Nogrod: ~/session-1azaghal@Nogrod:~/session-1$ ls
+[0m[01;34mAutomation[0m  [01;34mdata-shell[0m  [01;34mPython_Visualization[0m
+]0;azaghal@Nogrod: ~/session-1azaghal@Nogrod:~/session-1$ cd data-shell/
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m    nano.save           notes.txt  solar.pdf  [01;34mwriting[0m
+[01;34mdata[0m       [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ cd data
+]0;azaghal@Nogrod: ~/session-1/data-shell/dataazaghal@Nogrod:~/session-1/data-shell/data$ ls
+amino-acids.txt  animals.txt  morse.txt  planets.txt  sunspot.txt
+[0m[01;34manimal-counts[0m    [01;34melements[0m     [01;34mpdb[0m        salmon.txt
+]0;azaghal@Nogrod: ~/session-1/data-shell/dataazaghal@Nogrod:~/session-1/data-shell/data$ c[Kls
+amino-acids.txt  animals.txt  morse.txt  planets.txt  sunspot.txt
+[0m[01;34manimal-counts[0m    [01;34melements[0m     [01;34mpdb[0m        salmon.txt
+]0;azaghal@Nogrod: ~/session-1/data-shell/dataazaghal@Nogrod:~/session-1/data-shell/data$ cd ..
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m    nano.save           notes.txt  solar.pdf  [01;34mwriting[0m
+[01;34mdata[0m       [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ cd north-pacific-gyre/
+]0;azaghal@Nogrod: ~/session-1/data-shell/north-pacific-gyreazaghal@Nogrod:~/session-1/data-shell/north-pacific-gyre$ ls
+[0m[01;34m2012-07-03[0m
+]0;azaghal@Nogrod: ~/session-1/data-shell/north-pacific-gyreazaghal@Nogrod:~/session-1/data-shell/north-pacific-gyre$ cd 2012-07-03/
+]0;azaghal@Nogrod: ~/session-1/data-shell/north-pacific-gyre/2012-07-03azaghal@Nogrod:~/session-1/data-shell/north-pacific-gyre/2012-07-03$ ls
+do-stats.sh     NENE01843A.txt  NENE02043A.txt        stats-NENE01843A.txt
+goodiff         NENE01843B.txt  NENE02043B.txt        stats-NENE01843B.txt
+goostats        NENE01971Z.txt  stats-datafile        stats-NENE01978A.txt
+NENE01729A.txt  NENE01978A.txt  stats-NENE01729A.txt  stats-NENE01978B.txt
+NENE01729B.txt  NENE01978B.txt  stats-NENE01729B.txt  stats-NENE02018B.txt
+NENE01736A.txt  NENE02018B.txt  stats-NENE01736A.txt  stats-NENE02040A.txt
+NENE01751A.txt  NENE02040A.txt  stats-NENE01751A.txt  stats-NENE02040B.txt
+NENE01751B.txt  NENE02040B.txt  stats-NENE01751B.txt  stats-NENE02043A.txt
+NENE01812A.txt  NENE02040Z.txt  stats-NENE01812A.txt  stats-NENE02043B.txt
+]0;azaghal@Nogrod: ~/session-1/data-shell/north-pacific-gyre/2012-07-03azaghal@Nogrod:~/session-1/data-shell/north-pacific-gyre/2012-07-03$ pwd
+/home/azaghal/session-1/data-shell/north-pacific-gyre/2012-07-03
+]0;azaghal@Nogrod: ~/session-1/data-shell/north-pacific-gyre/2012-07-03azaghal@Nogrod:~/session-1/data-shell/north-pacific-gyre/2012-07-03$ cd /home/azaghal/see[Kssio n-1/data-shell
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ pwd
+/home/azaghal/session-1/data-shell
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m    nano.save           notes.txt  solar.pdf  [01;34mwriting[0m
+[01;34mdata[0m       [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ mkdir "dir with space"
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m         [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+[01;34mdata[0m       [01;34mdir with space[0m  nano.save  notes.txt           solar.pdf  [01;34mwriting[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ cd "dir with space"/[K
+]0;azaghal@Nogrod: ~/session-1/data-shell/dir with spaceazaghal@Nogrod:~/session-1/data-shell/dir with space$ cd ..
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ \[Kcd dir\ with\ space
+]0;azaghal@Nogrod: ~/session-1/data-shell/dir with spaceazaghal@Nogrod:~/session-1/data-shell/dir with space$ cd dir wih [K[Kth space
+bash: cd: dir: No such file or directory
+]0;azaghal@Nogrod: ~/session-1/data-shell/dir with spaceazaghal@Nogrod:~/session-1/data-shell/dir with space$ ls -F
+]0;azaghal@Nogrod: ~/session-1/data-shell/dir with spaceazaghal@Nogrod:~/session-1/data-shell/dir with space$ cd ..
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ p[Kcd ..ls -F
+[0m[01;34mcreatures[0m/  [01;34mDesktop[0m/         [01;34mmolecules[0m/  [01;34mnorth-pacific-gyre[0m/  pizza.cfg  [01;34mthesis[0m/
+[01;34mdata[0m/       [01;34mdir with space[0m/  nano.save   notes.txt            solar.pdf  [01;34mwriting[0m/
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m         [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+[01;34mdata[0m       [01;34mdir with space[0m  nano.save  notes.txt           solar.pdf  [01;34mwriting[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls --help
+Usage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic characters
+      --block-size=SIZE      scale sizes by SIZE before printing them; e.g.,
+                               '--block-size=M' prints sizes in units of
+                               1,048,576 bytes; see SIZE format below
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of last
+                               modification of file status information);
+                               with -l: show ctime and sort by name;
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output; WHEN can be 'always' (default
+                               if omitted), 'auto', or 'never'; more info below
+  -d, --directory            list directories themselves, not their contents
+  -D, --dired                generate output designed for Emacs' dired mode
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=>@|) to entries
+      --file-type            likewise, except do not append '*'
+      --format=WORD          across -x, commas -m, horizontal -x, long -l,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files;
+                               can be augmented with a --sort option, but any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don't print group names
+  -h, --human-readable       with -l and/or -s, print human readable sizes
+                               (e.g., 1K 234M 2G)
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                               that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell PATTERN
+                               (overridden by -a or -A)
+      --indicator-style=WORD  append indicator with style WORD to entry names:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
+  -k, --kibibytes            default to 1024-byte blocks for disk usage
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the link
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of entries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print raw entry names (don't treat e.g. control
+                               characters specially)
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of nongraphic characters
+      --show-control-chars   show nongraphic characters as-is (the default,
+                               unless program is 'ls' and output is a terminal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always,
+                               shell-escape, shell-escape-always, c, escape
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in blocks
+  -S                         sort by file size, largest first
+      --sort=WORD            sort by WORD instead of name: none (-U), size (-S),
+                               time (-t), version (-v), extension (-X)
+      --time=WORD            with -l, show time as WORD instead of default
+                               modification time: atime or access or use (-u);
+                               ctime or status (-c); also use specified time
+                               as sort key if --sort=time (newest first)
+      --time-style=STYLE     with -l, show times using style STYLE:
+                               full-iso, long-iso, iso, locale, or +FORMAT;
+                               FORMAT is interpreted like in 'date'; if FORMAT
+                               is FORMAT1<newline>FORMAT2, then FORMAT1 applies
+                               to non-recent files and FORMAT2 to recent files;
+                               if STYLE is prefixed with 'posix-', STYLE
+                               takes effect only outside the POSIX locale
+  -t                         sort by modification time, newest first
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time;
+                               with -l: show access time and sort by name;
+                               otherwise: sort by access time, newest first
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within text
+  -w, --width=COLS           set output width to COLS.  0 means no limit
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any security context of each file
+  -1                         list one file per line.  Avoid '\n' with -q or -b
+      --help     display this help and exit
+      --version  output version information and exit
+
+The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
+Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+
+GNU coreutils online help: <http://www.gnu.org/software/coreutils/>
+Full documentation at: <http://www.gnu.org/software/coreutils/ls>
+or available locally via: info '(coreutils) ls invocation'
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls -a
+[0m[01;34m.[0m              [01;34mcreatures[0m  [01;34mdir with space[0m  [01;34mnorth-pacific-gyre[0m  solar.pdf
+[01;34m..[0m             [01;34mdata[0m       [01;34mmolecules[0m       notes.txt           [01;34mthesis[0m
+.bash_profile  [01;34mDesktop[0m    nano.save       pizza.cfg           [01;34mwriting[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m         [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+[01;34mdata[0m       [01;34mdir with space[0m  nano.save  notes.txt           solar.pdf  [01;34mwriting[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m         [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+[01;34mdata[0m       [01;34mdir with space[0m  nano.save  notes.txt           solar.pdf  [01;34mwriting[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ./[K[Kdhfjdla[K[K[K[K[K[K[Kman ls
+[?1049h[?1h=LS(1)                                 User Commands                                 LS(1)[m
+[m
+[1mNAME[0m[m
+       ls - list directory contents[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       List information about the FILEs (the current directory by default).  Sort entries[m
+       alphabetically if none of [1m-cftuvSUX[0m nor [1m--sort[0m is specified.[m
+[m
+       Mandatory arguments to long options are mandatory for short options too.[m
+[m
+       [1m-a[0m, [1m--all[0m[m
+              do not ignore entries starting with .[m
+[m
+       [1m-A[0m, [1m--almost-all[0m[m
+              do not list implied . and ..[m
+[m
+       [1m--author[0m[m
+              with [1m-l[0m, print the author of each file[m
+[m
+       [1m-b[0m, [1m--escape[0m[m
+              print C-style escapes for nongraphic characters[m
+[m
+       [1m--block-size[0m=[4mSIZE[24m[m
+              scale sizes by SIZE before printing  them;  e.g.,  '--block-size=M'  prints[m
+              sizes in units of 1,048,576 bytes; see SIZE format below[m
+[m
+       [1m-B[0m, [1m--ignore-backups[0m[m
+              do not list implied entries ending with ~[m
+[m
+[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-c[0m     with  [1m-lt[0m: sort by, and show, ctime (time of last modification of file sta‐[m
+[7m Manual page ls(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              tus information); with [1m-l[0m: show ctime and sort by name; otherwise: sort  by[m
+[7m Manual page ls(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              ctime, newest first[m
+[7m Manual page ls(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m-C[0m     list entries by columns[m
+[7m Manual page ls(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K[m
+[7m Manual page ls(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K       [1m--color[0m[=[4mWHEN[24m][m
+[7m Manual page ls(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KBB[K              colorize  the output; WHEN can be 'always' (default if omitted), 'auto', or[m
+[7m Manual page ls(1) line 9 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[34;1H[K[7m Manual page ls(1) line 8 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[34;1H[K[7m Manual page ls(1) line 7 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mSYNOPSIS[0m[m
+[34;1H[K[7m Manual page ls(1) line 6 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[34;1H[K[7m Manual page ls(1) line 5 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM       ls - list directory contents[m
+[34;1H[K[7m Manual page ls(1) line 4 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[1mNAME[0m[m
+[34;1H[K[7m Manual page ls(1) line 3 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HM[m
+[34;1H[K[7m Manual page ls(1) line 2 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[HMLS(1)                                 User Commands                                 LS(1)[m
+[34;1H[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K [KESCESC[KOO[KAA[K[K[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K/[Kdd[Kii[Krr[Kee[Kcc[Ktt[Koo[Krr[Kyy[K[1;1HLS(1)                                 User Commands                                 LS(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       ls - list directory contents[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[8;1H[m
+[9;1H[1mDESCRIPTION[0m[m
+[10;1H       List information about the FILEs (the current directory by default).  Sort entries[m
+[11;1H       alphabetically if none of [1m-cftuvSUX[0m nor [1m--sort[0m is specified.[m
+[12;1H[m
+[13;1H       Mandatory arguments to long options are mandatory for short options too.[m
+[14;1H[m
+[15;1H       [1m-a[0m, [1m--all[0m[m
+[16;1H              do not ignore entries starting with .[m
+[17;1H[m
+[18;1H       [1m-A[0m, [1m--almost-all[0m[m
+[19;1H              do not list implied . and ..[m
+[20;1H[m
+[21;1H       [1m--author[0m[m
+[22;1H              with [1m-l[0m, print the author of each file[m
+[23;1H[m
+[24;1H       [1m-b[0m, [1m--escape[0m[m
+[25;1H              print C-style escapes for nongraphic characters[m
+[26;1H[m
+[27;1H       [1m--block-size[0m=[4mSIZE[24m[m
+[28;1H              scale sizes by SIZE before printing  them;  e.g.,  '--block-size=M'  prints[m
+[29;1H              sizes in units of 1,048,576 bytes; see SIZE format below[m
+[30;1H[m
+[31;1H       [1m-B[0m, [1m--ignore-backups[0m[m
+[32;1H              do not list implied entries ending with ~[m
+[33;1H[m
+[34;1H[1;1HLS(1)                                 User Commands                                 LS(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       ls - list [7mdirectory[27m contents[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[8;1H[m
+[9;1H[1mDESCRIPTION[0m[m
+[10;1H       List information about the FILEs (the current [7mdirectory[27m by default).  Sort entries[m
+[11;1H       alphabetically if none of [1m-cftuvSUX[0m nor [1m--sort[0m is specified.[m
+[12;1H[m
+[13;1H       Mandatory arguments to long options are mandatory for short options too.[m
+[14;1H[m
+[15;1H       [1m-a[0m, [1m--all[0m[m
+[16;1H              do not ignore entries starting with .[m
+[17;1H[m
+[18;1H       [1m-A[0m, [1m--almost-all[0m[m
+[19;1H              do not list implied . and ..[m
+[20;1H[m
+[21;1H       [1m--author[0m[m
+[22;1H              with [1m-l[0m, print the author of each file[m
+[23;1H[m
+[24;1H       [1m-b[0m, [1m--escape[0m[m
+[25;1H              print C-style escapes for nongraphic characters[m
+[26;1H[m
+[27;1H       [1m--block-size[0m=[4mSIZE[24m[m
+[28;1H              scale sizes by SIZE before printing  them;  e.g.,  '--block-size=M'  prints[m
+[29;1H              sizes in units of 1,048,576 bytes; see SIZE format below[m
+[30;1H[m
+[31;1H       [1m-B[0m, [1m--ignore-backups[0m[m
+[32;1H              do not list implied entries ending with ~[m
+[33;1H[m
+[34;1H       [1m-c[0m     with  [1m-lt[0m: sort by, and show, ctime (time of last modification of file sta‐[m
+              tus information); with [1m-l[0m: show ctime and sort by name; otherwise: sort  by[m
+              ctime, newest first[m
+[7m Manual page ls(1) line 4 (press h for help or q to quit)[27m[K[K[?1l>[?1049l]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls ..
+[0m[01;34mAutomation[0m  [01;34mdata-shell[0m  [01;34mPython_Visualization[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m         [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+[01;34mdata[0m       [01;34mdir with space[0m  nano.save  notes.txt           solar.pdf  [01;34mwriting[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls data
+amino-acids.txt  animals.txt  morse.txt  planets.txt  sunspot.txt
+[0m[01;34manimal-counts[0m    [01;34melements[0m     [01;34mpdb[0m        salmon.txt
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls -F -a data
+[0m[01;34m.[0m/   amino-acids.txt  animals.txt  morse.txt  planets.txt  sunspot.txt
+[01;34m..[0m/  [01;34manimal-counts[0m/   [01;34melements[0m/    [01;34mpdb[0m/       salmon.txt
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ man ls
+[?1049h[?1h=LS(1)                                 User Commands                                 LS(1)[m
+[m
+[1mNAME[0m[m
+       ls - list directory contents[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       List information about the FILEs (the current directory by default).  Sort entries[m
+       alphabetically if none of [1m-cftuvSUX[0m nor [1m--sort[0m is specified.[m
+[m
+       Mandatory arguments to long options are mandatory for short options too.[m
+[m
+       [1m-a[0m, [1m--all[0m[m
+              do not ignore entries starting with .[m
+[m
+       [1m-A[0m, [1m--almost-all[0m[m
+              do not list implied . and ..[m
+[m
+       [1m--author[0m[m
+              with [1m-l[0m, print the author of each file[m
+[m
+       [1m-b[0m, [1m--escape[0m[m
+              print C-style escapes for nongraphic characters[m
+[m
+       [1m--block-size[0m=[4mSIZE[24m[m
+              scale sizes by SIZE before printing  them;  e.g.,  '--block-size=M'  prints[m
+              sizes in units of 1,048,576 bytes; see SIZE format below[m
+[m
+       [1m-B[0m, [1m--ignore-backups[0m[m
+              do not list implied entries ending with ~[m
+[m
+[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ cd north-pacific-gyre/
+]0;azaghal@Nogrod: ~/session-1/data-shell/north-pacific-gyreazaghal@Nogrod:~/session-1/data-shell/north-pacific-gyre$ ls
+[0m[01;34m2012-07-03[0m
+]0;azaghal@Nogrod: ~/session-1/data-shell/north-pacific-gyreazaghal@Nogrod:~/session-1/data-shell/north-pacific-gyre$ mkdir 2012-7-2
+]0;azaghal@Nogrod: ~/session-1/data-shell/north-pacific-gyreazaghal@Nogrod:~/session-1/data-shell/north-pacific-gyre$ ls
+[0m[01;34m2012-07-03[0m  [01;34m2012-7-2[0m
+]0;azaghal@Nogrod: ~/session-1/data-shell/north-pacific-gyreazaghal@Nogrod:~/session-1/data-shell/north-pacific-gyre$ ls[Kmv 2012-7-2 2012-07-02
+]0;azaghal@Nogrod: ~/session-1/data-shell/north-pacific-gyreazaghal@Nogrod:~/session-1/data-shell/north-pacific-gyre$ ls
+[0m[01;34m2012-07-02[0m  [01;34m2012-07-03[0m
+]0;azaghal@Nogrod: ~/session-1/data-shell/north-pacific-gyreazaghal@Nogrod:~/session-1/data-shell/north-pacific-gyre$ cd ~/jupyter/research-notebook/
+]0;azaghal@Nogrod: ~/jupyter/research-notebookazaghal@Nogrod:~/jupyter/research-notebook$ ls
+[0m[01;34m2016[0m  [01;34m2017[0m  notebook-for-qi.ipynb  table-of-contents.html  [01;32mupdate-toc.sh[0m
+]0;azaghal@Nogrod: ~/jupyter/research-notebookazaghal@Nogrod:~/jupyter/research-notebook$ cd 2016[K7
+]0;azaghal@Nogrod: ~/jupyter/research-notebook/2017azaghal@Nogrod:~/jupyter/research-notebook/2017$ ls
+[0m[01;34m01[0m  [01;34m02[0m  [01;34m03[0m  [01;34m04[0m  [01;34m05[0m
+]0;azaghal@Nogrod: ~/jupyter/research-notebook/2017azaghal@Nogrod:~/jupyter/research-notebook/2017$ cd 0[K05
+]0;azaghal@Nogrod: ~/jupyter/research-notebook/2017/05azaghal@Nogrod:~/jupyter/research-notebook/2017/05$ ls
+2017-05-01.ipynb  2017-05-02-a.ipynb  2017-05-02-b.ipynb
+]0;azaghal@Nogrod: ~/jupyter/research-notebook/2017/05azaghal@Nogrod:~/jupyter/research-notebook/2017/05$ cd ../..
+]0;azaghal@Nogrod: ~/jupyter/research-notebookazaghal@Nogrod:~/jupyter/research-notebook$ ls
+[0m[01;34m2016[0m  [01;34m2017[0m  notebook-for-qi.ipynb  table-of-contents.html  [01;32mupdate-toc.sh[0m
+]0;azaghal@Nogrod: ~/jupyter/research-notebookazaghal@Nogrod:~/jupyter/research-notebook$ [K]0;azaghal@Nogrod: ~/jupyter/research-notebookazaghal@Nogrod:~/jupyter/research-notebook$ ls
+[0m[01;34m2016[0m  [01;34m2017[0m  notebook-for-qi.ipynb  table-of-contents.html  [01;32mupdate-toc.sh[0m
+]0;azaghal@Nogrod: ~/jupyter/research-notebookazaghal@Nogrod:~/jupyter/research-notebook$ cd ~/session-1/data-shell/
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m         [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+[01;34mdata[0m       [01;34mdir with space[0m  nano.save  notes.txt           solar.pdf  [01;34mwriting[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ mkdir "[K[K[K[K[K[K[Kmv "dir with space" dir-without-space
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m            [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+[01;34mdata[0m       [01;34mdir-without-space[0m  nano.save  notes.txt           solar.pdf  [01;34mwriting[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ nano draft.txt
+[?1049h[1;34r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[32;41H(B[0;7m[ New File ][3d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3                  File: draft.txt                                           [33;1H^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[34d(B[0;7m^X(B[m Exit[34;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line[3d[1;83H(B[0;7mModified[3d(B[mThis is not  longer a blan[32d[K[3;25Hk file.[32d(B[0;7mFile Name to Write: draft.txt                                                               [33;16H(B[m   (B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append        (B[0;7mM-B(B[m Backup File[K[34;2H(B[0;7mC(B[m Cancel[16G   (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend       (B[0;7m^T(B[m To Files[K[32;30H[?25l[32;38H[39;49m(B[m[1K (B[0;7m[ Wrote 1 line ](B[m[K[3;32H[?12l[?25h[1;83H(B[0;7m        [33;16H^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[34;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line[3;32H[32d[J[34;92H[34;1H[?1049l[?1l>]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m            draft.txt  nano.save           notes.txt  solar.pdf  [01;34mwriting[0m
+[01;34mdata[0m       [01;34mdir-without-space[0m  [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ nano /home/azaghal/session-1/data-shell/draft2.txt
+[?1049h[1;34r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[32;41H(B[0;7m[ New File ][3d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3      File: /home/azaghal/session-1/data-shell/draft2.txt                   [33;1H^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[34d(B[0;7m^X(B[m Exit[34;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line[3d[1;83H(B[0;7mModified[3d(B[mSomething else[32d(B[0;7mFile Name to Write: /home/azaghal/session-1/data-shell/draft2.txt                           [33;16H(B[m   (B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append        (B[0;7mM-B(B[m Backup File[K[34;2H(B[0;7mC(B[m Cancel[16G   (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend       (B[0;7m^T(B[m To Files[K[32d[?25l[32;38H[39;49m(B[m[1K (B[0;7m[ Wrote 1 line ](B[m[K[3;15H[?12l[?25h[1;83H(B[0;7m        [33;16H^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[34;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line[3;15H[32d[J[34;92H[34;1H[?1049l[?1l>]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m            draft2.txt  [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+[01;34mdata[0m       [01;34mdir-without-space[0m  draft.txt   nano.save  notes.txt           solar.pdf  [01;34mwriting[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ nano draft.txt
+[?1049h[1;34r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[32;39H(B[0;7m[ Reading File ][3d(B[m[32;45H(B[0;7m 1 line ](B[m[K[4d[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3                  File: draft.txt                                           [3;1H(B[mThis is no longer a blank file.[33d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[34d(B[0;7m^X(B[m Exit[34;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line[3d[32d[J[34;92H[34;1H[?1049l[?1l>]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ rm draft.txt
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m            draft2.txt  nano.save           notes.txt  solar.pdf  [01;34mwriting[0m
+[01;34mdata[0m       [01;34mdir-without-space[0m  [01;34mmolecules[0m   [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ mv draft2.txt dir-without-space/
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls mv[K[Kdir-without-space/
+draft2.txt
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ rm dir-without-space/
+rm: cannot remove 'dir-without-space/': Is a directory
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ rm -r -i dir-without-space/
+rm: descend into directory 'dir-without-space/'? y
+rm: remove regular file 'dir-without-space/draft2.txt'? y
+rm: remove directory 'dir-without-space/'? y n
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m            [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+[01;34mdata[0m       [01;34mdir-without-space[0m  nano.save  notes.txt           solar.pdf  [01;34mwriting[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls dir-without-space/
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ rm -r dir-without-space/
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m    nano.save           notes.txt  solar.pdf  [01;34mwriting[0m
+[01;34mdata[0m       [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls -r north-pacific-gyre/
+[0m[01;34m2012-07-03[0m  [01;34m2012-07-02[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls -r north-pacific-gyre/[1P north-pacific-gyre/R north-pacific-gyre/
+north-pacific-gyre/:
+[0m[01;34m2012-07-02[0m  [01;34m2012-07-03[0m
+
+north-pacific-gyre/2012-07-02:
+
+north-pacific-gyre/2012-07-03:
+do-stats.sh     NENE01843A.txt  NENE02043A.txt        stats-NENE01843A.txt
+goodiff         NENE01843B.txt  NENE02043B.txt        stats-NENE01843B.txt
+goostats        NENE01971Z.txt  stats-datafile        stats-NENE01978A.txt
+NENE01729A.txt  NENE01978A.txt  stats-NENE01729A.txt  stats-NENE01978B.txt
+NENE01729B.txt  NENE01978B.txt  stats-NENE01729B.txt  stats-NENE02018B.txt
+NENE01736A.txt  NENE02018B.txt  stats-NENE01736A.txt  stats-NENE02040A.txt
+NENE01751A.txt  NENE02040A.txt  stats-NENE01751A.txt  stats-NENE02040B.txt
+NENE01751B.txt  NENE02040B.txt  stats-NENE01751B.txt  stats-NENE02043A.txt
+NENE01812A.txt  NENE02040Z.txt  stats-NENE01812A.txt  stats-NENE02043B.txt
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m    nano.save           notes.txt  solar.pdf  [01;34mwriting[0m
+[01;34mdata[0m       [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ nano draft.txt
+[?1049h[1;34r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[32;41H(B[0;7m[ New File ][3d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3                  File: draft.txt                                           [33;1H^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[34d(B[0;7m^X(B[m Exit[34;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line[3d[1;83H(B[0;7mModified[3d(B[mHello[32d(B[0;7mFile Name to Write: draft.txt                                                               [33;16H(B[m   (B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append        (B[0;7mM-B(B[m Backup File[K[34;2H(B[0;7mC(B[m Cancel[16G   (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend       (B[0;7m^T(B[m To Files[K[32;30H[?25l[32;38H[39;49m(B[m[1K (B[0;7m[ Wrote 1 line ](B[m[K[3;6H[?12l[?25h[1;83H(B[0;7m        [33;16H^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[34;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line[3;6H[32d[J[34;92H[34;1H[?1049l[?1l>]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ nano draft2.txt
+[?1049h[1;34r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[32;41H(B[0;7m[ New File ][3d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3                  File: draft2.txt                                          [33;1H^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[34d(B[0;7m^X(B[m Exit[34;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line[3d[1;83H(B[0;7mModified[3d(B[mThere[32d(B[0;7mFile Name to Write: draft2.txt                                                              [33;16H(B[m   (B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append        (B[0;7mM-B(B[m Backup File[K[34;2H(B[0;7mC(B[m Cancel[16G   (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend       (B[0;7m^T(B[m To Files[K[32;31H[?25l[38G[39;49m(B[m[1K (B[0;7m[ Wrote 1 line ](B[m[K[3;6H[?12l[?25h[1;83H(B[0;7m        [33;16H^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[34;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line[3;6H[32d[J[34;92H[34;1H[?1049l[?1l>]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m     draft.txt  nano.save           notes.txt  solar.pdf  [01;34mwriting[0m
+[01;34mdata[0m       draft2.txt  [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ mv draft2.txt draft.txt
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m    [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+[01;34mdata[0m       draft.txt  nano.save  notes.txt           solar.pdf  [01;34mwriting[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ nano da[Kraft2.txt
+[?1049h[1;34r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[32;41H(B[0;7m[ New File ][3d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3                  File: draft2.txt                                          [33;1H^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[34d(B[0;7m^X(B[m Exit[34;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line[3d[1;83H(B[0;7mModified[3d(B[mHello[32d(B[0;7mFile Name to Write: draft2.txt                                                              [33;16H(B[m   (B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append        (B[0;7mM-B(B[m Backup File[K[34;2H(B[0;7mC(B[m Cancel[16G   (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend       (B[0;7m^T(B[m To Files[K[32;31H[?25l[38G[39;49m(B[m[1K (B[0;7m[ Wrote 1 line ](B[m[K[3;6H[?12l[?25h[1;83H(B[0;7m        [33;16H^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[34;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line[3;6H[32d[J[34;92H[34;1H[?1049l[?1l>]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m     draft.txt  nano.save           notes.txt  solar.pdf  [01;34mwriting[0m
+[01;34mdata[0m       draft2.txt  [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ mv -i drf[Kaft2.txt draft.txt
+mv: overwrite 'draft.txt'? n
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ rm draft.txt draft2.txt 
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m    nano.save           notes.txt  solar.pdf  [01;34mwriting[0m
+[01;34mdata[0m       [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ cd ..
+]0;azaghal@Nogrod: ~/session-1azaghal@Nogrod:~/session-1$ ls
+[0m[01;34mAutomation[0m  [01;34mdata-shell[0m  [01;34mPython_Visualization[0m
+]0;azaghal@Nogrod: ~/session-1azaghal@Nogrod:~/session-1$ cd data-shell/north-pacific-gyre/2012-07-0
+2012-07-02/ 2012-07-03/ 
+]0;azaghal@Nogrod: ~/session-1azaghal@Nogrod:~/session-1$ cd data-shell/north-pacific-gyre/2012-07-0
+2012-07-02/ 2012-07-03/ 
+]0;azaghal@Nogrod: ~/session-1azaghal@Nogrod:~/session-1$ cd data-shell/north-pacific-gyre/2012-07-0
+2012-07-02/ 2012-07-03/ 
+]0;azaghal@Nogrod: ~/session-1azaghal@Nogrod:~/session-1$ cd data-shell/north-pacific-gyre/2012-07-03
+]0;azaghal@Nogrod: ~/session-1/data-shell/north-pacific-gyre/2012-07-03azaghal@Nogrod:~/session-1/data-shell/north-pacific-gyre/2012-07-03$ cd -
+/home/azaghal/session-1
+]0;azaghal@Nogrod: ~/session-1azaghal@Nogrod:~/session-1$ cd -
+/home/azaghal/session-1/data-shell/north-pacific-gyre/2012-07-03
+]0;azaghal@Nogrod: ~/session-1/data-shell/north-pacific-gyre/2012-07-03azaghal@Nogrod:~/session-1/data-shell/north-pacific-gyre/2012-07-03$ cd -
+/home/azaghal/session-1
+]0;azaghal@Nogrod: ~/session-1azaghal@Nogrod:~/session-1$ cd ~
+]0;azaghal@Nogrod: ~azaghal@Nogrod:~$ pwd
+/home/azaghal
+]0;azaghal@Nogrod: ~azaghal@Nogrod:~$ cd
+]0;azaghal@Nogrod: ~azaghal@Nogrod:~$ cd ~/session-1/
+]0;azaghal@Nogrod: ~/session-1azaghal@Nogrod:~/session-1$ cd[K[Kls
+[0m[01;34mAutomation[0m  [01;34mdata-shell[0m  [01;34mPython_Visualization[0m
+]0;azaghal@Nogrod: ~/session-1azaghal@Nogrod:~/session-1$ cd data-shell/
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m    nano.save           notes.txt  solar.pdf  [01;34mwriting[0m
+[01;34mdata[0m       [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls molecules/
+cubane.pdb  lengths.txt  middle.sh   pentane.pdb  sorted-lengths.txt
+ethane.pdb  methane.pdb  octane.pdb  propane.pdb  sorted.sh
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ cd molecules/
+]0;azaghal@Nogrod: ~/session-1/data-shell/moleculesazaghal@Nogrod:~/session-1/data-shell/molecules$ ls
+cubane.pdb  lengths.txt  middle.sh   pentane.pdb  sorted-lengths.txt
+ethane.pdb  methane.pdb  octane.pdb  propane.pdb  sorted.sh
+]0;azaghal@Nogrod: ~/session-1/data-shell/moleculesazaghal@Nogrod:~/session-1/data-shell/molecules$ nano cubane.pdb 
+[?1049h[1;34r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[32;39H(B[0;7m[ Reading File ][3d(B[m[32;38H(B[0;7m[ Read 20 lines[23d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3                  File: cubane.pdb                                          [3;1H(B[mCOMPND[13GCUBANE[4dAUTHOR[13GDAVE WOODCOCK  95 12 06[5dATOM[11G1  C[5;26H1[34G0.789  -0.852   0.504  1.00  0.00[6dATOM[11G2  C[6;26H1[33G-0.161  -1.104  -0.624  1.00  0.00[7dATOM[11G3  C[7;26H1[33G-1.262  -0.440   0.160  1.00  0.00[8dATOM[11G4  C[8;26H1[33G-0.289  -0.202   1.284  1.00  0.00[9dATOM[11G5  C[9;26H1[34G1.203   0.513  -0.094  1.00  0.00[10dATOM[11G6  C[10;26H1[34G0.099   1.184   0.694  1.00  0.00[11dATOM[11G7  C[11;26H1[33G-0.885   0.959  -0.460  1.00  0.00[12dATOM[11G8  C[12;26H1[34G0.236   0.283  -1.269  1.00  0.00[13dATOM[11G9  H[13;26H1[34G1.410  -1.631   0.942  1.00  0.00[14dATOM     10  H[14;26H1[33G-0.262  -2.112  -1.024  1.00  0.00[15dATOM     11  H[15;26H1[33G-2.224  -0.925   0.328  1.00  0.00[16dATOM     12  H[16;26H1[33G-0.468  -0.501   2.315  1.00  0.00[17dATOM     13  H[17;26H1[34G2.224   0.892  -0.134  1.00  0.00[18dATOM     14  H[18;26H1[34G0.240   2.112   1.251  1.00  0.00[19dATOM     15  H[19;26H1[33G-1.565   1.730  -0.831  1.00  0.00[20dATOM     16  H[20;26H1[34G0.472   0.494  -2.315  1.00  0.00[21dTER[10G17[21;26H1[22dEND[33d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[34d(B[0;7m^X(B[m Exit[34;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line[3d[?25l[32;21H(B[0;7m[ line 1/21 (4%), col 1/19 (5%), char 0/1158 (0%) ][3d(B[m[?12l[?25h[?25l[32;36H[1K (B[0;7m[ Unknown Command ](B[m[K[3d[?12l[?25h[32d[J[34;92H[34;1H[?1049l[?1l>]0;azaghal@Nogrod: ~/session-1/data-shell/moleculesazaghal@Nogrod:~/session-1/data-shell/molecules$ wc cubane.pdb 
+  20  156 1158 cubane.pdb
+]0;azaghal@Nogrod: ~/session-1/data-shell/moleculesazaghal@Nogrod:~/session-1/data-shell/molecules$ wc *.pdb
+  20  156 1158 cubane.pdb
+  12   84  622 ethane.pdb
+   9   57  422 methane.pdb
+  30  246 1828 octane.pdb
+  21  165 1226 pentane.pdb
+  15  111  825 propane.pdb
+ 107  819 6081 total
+]0;azaghal@Nogrod: ~/session-1/data-shell/moleculesazaghal@Nogrod:~/session-1/data-shell/molecules$ wc -l *.pdb
+  20 cubane.pdb
+  12 ethane.pdb
+   9 methane.pdb
+  30 octane.pdb
+  21 pentane.pdb
+  15 propane.pdb
+ 107 total
+]0;azaghal@Nogrod: ~/session-1/data-shell/moleculesazaghal@Nogrod:~/session-1/data-shell/molecules$ wc -l *.pdb > lengths.txt
+]0;azaghal@Nogrod: ~/session-1/data-shell/moleculesazaghal@Nogrod:~/session-1/data-shell/molecules$ ls
+cubane.pdb  lengths.txt  middle.sh   pentane.pdb  sorted-lengths.txt
+ethane.pdb  methane.pdb  octane.pdb  propane.pdb  sorted.sh
+]0;azaghal@Nogrod: ~/session-1/data-shell/moleculesazaghal@Nogrod:~/session-1/data-shell/molecules$ nano lengths.txt 
+[?1049h[1;34r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[32;39H(B[0;7m[ Reading File ][3d(B[m[32;45H(B[0;7m 7 lines[10d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3                 File: lengths.txt                                          [3;3H(B[m20 cubane.pdb[4;3H12 ethane.pdb[5;4H9 methane.pdb[6;3H30 octane.pdb[7;3H21 pentane.pdb[8;3H15 propane.pdb[9d 107 total[33d(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[34d(B[0;7m^X(B[m Exit[34;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Spell    (B[0;7m^_(B[m Go To Line[3d[32d[J[34;92H[34;1H[?1049l[?1l>]0;azaghal@Nogrod: ~/session-1/data-shell/moleculesazaghal@Nogrod:~/session-1/data-shell/molecules$ sort -n lengths.txt 
+   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+ 107 total
+]0;azaghal@Nogrod: ~/session-1/data-shell/moleculesazaghal@Nogrod:~/session-1/data-shell/molecules$ wc -c *.pdb
+1158 cubane.pdb
+ 622 ethane.pdb
+ 422 methane.pdb
+1828 octane.pdb
+1226 pentane.pdb
+ 825 propane.pdb
+6081 total
+]0;azaghal@Nogrod: ~/session-1/data-shell/moleculesazaghal@Nogrod:~/session-1/data-shell/molecules$ wc -c *.pdb|[K | sort -n
+ 422 methane.pdb
+ 622 ethane.pdb
+ 825 propane.pdb
+1158 cubane.pdb
+1226 pentane.pdb
+1828 octane.pdb
+6081 total
+]0;azaghal@Nogrod: ~/session-1/data-shell/moleculesazaghal@Nogrod:~/session-1/data-shell/molecules$ wc -l *pd[K[K[K*.pdb >[K| sort -n
+   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+ 107 total
+]0;azaghal@Nogrod: ~/session-1/data-shell/moleculesazaghal@Nogrod:~/session-1/data-shell/molecules$ ls
+cubane.pdb  lengths.txt  middle.sh   pentane.pdb  sorted-lengths.txt
+ethane.pdb  methane.pdb  octane.pdb  propane.pdb  sorted.sh
+]0;azaghal@Nogrod: ~/session-1/data-shell/moleculesazaghal@Nogrod:~/session-1/data-shell/molecules$ ls [K[K[Kwc
+A bunch of things
+
+      2       4      19
+]0;azaghal@Nogrod: ~/session-1/data-shell/moleculesazaghal@Nogrod:~/session-1/data-shell/molecules$ cd ..
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ ls
+[0m[01;34mcreatures[0m  [01;34mDesktop[0m    nano.save           notes.txt  solar.pdf  [01;34mwriting[0m
+[01;34mdata[0m       [01;34mmolecules[0m  [01;34mnorth-pacific-gyre[0m  pizza.cfg  [01;34mthesis[0m
+]0;azaghal@Nogrod: ~/session-1/data-shellazaghal@Nogrod:~/session-1/data-shell$ cd creatures/
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ lss[K
+basilisk.dat  original-basilisk.dat  original-unicorn.dat  unicorn.dat
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ rm *[Koriginal-*
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ ls
+basilisk.dat  unicorn.dat
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ cp *.dat original-*.dat
+cp: target 'original-*.dat' is not a directory
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ for filename in b[K*.dat
+> do
+>     cp filn[K[K[K[K$fin[Klename original-$fin[Klename[C-$filenamef-$filenamei-$filenamel-$filenamee-$filenamen-$filenamea-$filenamem-$filenamee-$filename[1P-$filename[1P-$filename[1P-$filename[1P-$filename[1P-$filename[1P-$filename[1P-$filename[1P-$filename[1P$filename[C[C[C[C[C[C[C[C[C[C
+> done
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ ls
+basilisk.dat  original-basilisk.dat  original-unicorn.dat  unicorn.dat
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ man cp
+[?1049h[?1h=CP(1)                                 User Commands                                 CP(1)[m
+[m
+[1mNAME[0m[m
+       cp - copy files and directories[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mcp[0m [[4mOPTION[24m]... [[4m-T[24m] [4mSOURCE[24m [4mDEST[24m[m
+       [1mcp[0m [[4mOPTION[24m]... [4mSOURCE[24m... [4mDIRECTORY[24m[m
+       [1mcp[0m [[4mOPTION[24m]... [4m-t[24m [4mDIRECTORY[24m [4mSOURCE[24m...[m
+[m
+[1mDESCRIPTION[0m[m
+       Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.[m
+[m
+       Mandatory arguments to long options are mandatory for short options too.[m
+[m
+       [1m-a[0m, [1m--archive[0m[m
+              same as [1m-dR[0m [1m--preserve[0m=[4mall[24m[m
+[m
+       [1m--attributes-only[0m[m
+              don't copy the file data, just the attributes[m
+[m
+       [1m--backup[0m[=[4mCONTROL[24m][m
+              make a backup of each existing destination file[m
+[m
+       [1m-b[0m     like [1m--backup[0m but does not accept an argument[m
+[m
+       [1m--copy-contents[0m[m
+              copy contents of special files when recursive[m
+[m
+       [1m-d[0m     same as [1m--no-dereference[0m [1m--preserve[0m=[4mlinks[24m[m
+[m
+       [1m-f[0m, [1m--force[0m[m
+              if  an  existing destination file cannot be opened, remove it and try again[m
+[7m Manual page cp(1) line 1 (press h for help or q to quit)[27m[K[K/[Krr[Kee[Kcc[Kuu[Krr[Kss[Kii[Kvv[Kee[K[1;1HCP(1)                                 User Commands                                 CP(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       cp - copy files and directories[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H       [1mcp[0m [[4mOPTION[24m]... [[4m-T[24m] [4mSOURCE[24m [4mDEST[24m[m
+[8;1H       [1mcp[0m [[4mOPTION[24m]... [4mSOURCE[24m... [4mDIRECTORY[24m[m
+[9;1H       [1mcp[0m [[4mOPTION[24m]... [4m-t[24m [4mDIRECTORY[24m [4mSOURCE[24m...[m
+[10;1H[m
+[11;1H[1mDESCRIPTION[0m[m
+[12;1H       Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.[m
+[13;1H[m
+[14;1H       Mandatory arguments to long options are mandatory for short options too.[m
+[15;1H[m
+[16;1H       [1m-a[0m, [1m--archive[0m[m
+[17;1H              same as [1m-dR[0m [1m--preserve[0m=[4mall[24m[m
+[18;1H[m
+[19;1H       [1m--attributes-only[0m[m
+[20;1H              don't copy the file data, just the attributes[m
+[21;1H[m
+[22;1H       [1m--backup[0m[=[4mCONTROL[24m][m
+[23;1H              make a backup of each existing destination file[m
+[24;1H[m
+[25;1H       [1m-b[0m     like [1m--backup[0m but does not accept an argument[m
+[26;1H[m
+[27;1H       [1m--copy-contents[0m[m
+[28;1H              copy contents of special files when recursive[m
+[29;1H[m
+[30;1H       [1m-d[0m     same as [1m--no-dereference[0m [1m--preserve[0m=[4mlinks[24m[m
+[31;1H[m
+[32;1H       [1m-f[0m, [1m--force[0m[m
+[33;1H              if  an  existing destination file cannot be opened, remove it and try again[m
+[34;1H[1;1HCP(1)                                 User Commands                                 CP(1)[m
+[2;1H[m
+[3;1H[1mNAME[0m[m
+[4;1H       cp - copy files and directories[m
+[5;1H[m
+[6;1H[1mSYNOPSIS[0m[m
+[7;1H       [1mcp[0m [[4mOPTION[24m]... [[4m-T[24m] [4mSOURCE[24m [4mDEST[24m[m
+[8;1H       [1mcp[0m [[4mOPTION[24m]... [4mSOURCE[24m... [4mDIRECTORY[24m[m
+[9;1H       [1mcp[0m [[4mOPTION[24m]... [4m-t[24m [4mDIRECTORY[24m [4mSOURCE[24m...[m
+[10;1H[m
+[11;1H[1mDESCRIPTION[0m[m
+[12;1H       Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.[m
+[13;1H[m
+[14;1H       Mandatory arguments to long options are mandatory for short options too.[m
+[15;1H[m
+[16;1H       [1m-a[0m, [1m--archive[0m[m
+[17;1H              same as [1m-dR[0m [1m--preserve[0m=[4mall[24m[m
+[18;1H[m
+[19;1H       [1m--attributes-only[0m[m
+[20;1H              don't copy the file data, just the attributes[m
+[21;1H[m
+[22;1H       [1m--backup[0m[=[4mCONTROL[24m][m
+[23;1H              make a backup of each existing destination file[m
+[24;1H[m
+[25;1H       [1m-b[0m     like [1m--backup[0m but does not accept an argument[m
+[26;1H[m
+[27;1H       [1m--copy-contents[0m[m
+[28;1H              copy contents of special files when [7mrecursive[27m[m
+[29;1H[m
+[30;1H       [1m-d[0m     same as [1m--no-dereference[0m [1m--preserve[0m=[4mlinks[24m[m
+[31;1H[m
+[32;1H       [1m-f[0m, [1m--force[0m[m
+[33;1H              if  an  existing destination file cannot be opened, remove it and try again[m
+[34;1H              (this option is ignored when the [1m-n[0m option is also used)[m
+[m
+       [1m-i[0m, [1m--interactive[0m[m
+              prompt before overwrite (overrides a previous [1m-n[0m option)[m
+[m
+       [1m-H[0m     follow command-line symbolic links in SOURCE[m
+[m
+       [1m-l[0m, [1m--link[0m[m
+              hard link files instead of copying[m
+[m
+       [1m-L[0m, [1m--dereference[0m[m
+              always follow symbolic links in SOURCE[m
+[m
+       [1m-n[0m, [1m--no-clobber[0m[m
+              do not overwrite an existing file (overrides a previous [1m-i[0m option)[m
+[m
+       [1m-P[0m, [1m--no-dereference[0m[m
+              never follow symbolic links in SOURCE[m
+[m
+       [1m-p[0m     same as [1m--preserve[0m=[4mmode[24m,ownership,timestamps[m
+[m
+       [1m--preserve[0m[=[4mATTR_LIST[24m][m
+              preserve the specified attributes (default: mode,ownership,timestamps),  if[m
+              possible additional attributes: context, links, xattr, all[m
+[m
+       [1m--no-preserve[0m=[4mATTR_LIST[24m[m
+              don't preserve the specified attributes[m
+[7m Manual page cp(1) line 28/160 37% (press h for help or q to quit)[27m[K[K[HM       [1m--copy-contents[0m[m
+[34;1H[K[7m Manual page cp(1) line 27/160 36% (press h for help or q to quit)[27m[K[K[HM[m
+[34;1H[K[7m Manual page cp(1) line 26/160 35% (press h for help or q to quit)[27m[K[K[HM       [1m-b[0m     like [1m--backup[0m but does not accept an argument[m
+[34;1H[K[7m Manual page cp(1) line 25/160 35% (press h for help or q to quit)[27m[K[K[m
+[7m Manual page cp(1) line 26/160 35% (press h for help or q to quit)[27m[K[K/[K       [1m--no-preserve[0m=[4mATTR_LIST[24m[m
+              don't preserve the specified attributes[m
+[7m Manual page cp(1) line 28/160 37% (press h for help or q to quit)[27m[K[K/[K...skipping...
+       [1m-R[0m, [1m-r[0m, [1m--[0m[1m[7mrecursive[27m[0m[m
+              copy directories [7mrecursive[27mly[m
+[m
+       [1m--reflink[0m[=[4mWHEN[24m][m
+              control clone/CoW copies. See below[m
+[m
+       [1m--remove-destination[0m[m
+              remove  each  existing  destination file before attempting to open it (con‐[m
+              trast with [1m--force[0m)[m
+[m
+       [1m--sparse[0m=[4mWHEN[24m[m
+              control creation of sparse files. See below[m
+[m
+       [1m--strip-trailing-slashes[0m[m
+              remove any trailing slashes from each SOURCE argument[m
+[m
+       [1m-s[0m, [1m--symbolic-link[0m[m
+              make symbolic links instead of copying[m
+[m
+       [1m-S[0m, [1m--suffix[0m=[4mSUFFIX[24m[m
+              override the usual backup suffix[m
+[m
+       [1m-t[0m, [1m--target-directory[0m=[4mDIRECTORY[24m[m
+              copy all SOURCE arguments into DIRECTORY[m
+[m
+       [1m-T[0m, [1m--no-target-directory[0m[m
+              treat DEST as a normal file[m
+[m
+       [1m-u[0m, [1m--update[0m[m
+              copy only when the SOURCE file is newer than the destination file  or  when[m
+              the destination file is missing[m
+[m
+       [1m-v[0m, [1m--verbose[0m[m
+[7m Manual page cp(1) line 65/160 58% (press h for help or q to quit)[27m[K[K[HM[m
+[34;1H[K[7m Manual page cp(1) line 64/160 57% (press h for help or q to quit)[27m[K[K       [1m-v[0m, [1m--verbose[0m[m
+[7m Manual page cp(1) line 65/160 58% (press h for help or q to quit)[27m[K[K[?1l>[?1049l]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ ls
+basilisk.dat  original-basilisk.dat  original-unicorn.dat  unicorn.dat
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ rm original-*
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ ls
+basilisk.dat  unicorn.dat
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ nano save-originals.sh
+[?1049h[1;34r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[32;41H(B[0;7m[ New File ][3d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3               File: save-originals.sh                                      [33;1H^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[34d(B[0;7m^X(B[m Exit[34;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Linter   (B[0;7m^_(B[m Go To Line[3d[1;83H(B[0;7mModified[3d(B[mfo[32mfor[39m(B[m[42m [49m(B[m f[32mfi[39m(B[mfilename[42m [49m(B[m i[32min[39m(B[m[42m [49m(B[m *.dat[4dd[32mdo[39m(B[m[5d[42m [32d[49m(B[m[K[5;2H[42m [49m(B[m[42m [49m(B[m[42m [49m(B[m    c(B[0;1m[34mcp[39m(B[m[42m [49m(B[m [32m$[39m(B[m(B[0;1m[31m$f[39m(B[m(B[0;1m[31mi[39m(B[m(B[0;1m[31ml[39m(B[m(B[0;1m[31me[39m(B[m(B[0;1m[31mn[39m(B[m(B[0;1m[31ma[39m(B[m(B[0;1m[31mm[39m(B[m(B[0;1m[31me[39m(B[m[42m [49m(B[m original-[32m$[39m(B[m(B[0;1m[31m$f[39m(B[m(B[0;1m[31mi[39m(B[m(B[0;1m[31mn[39m(B[m (B[0;1m[31ml[39m(B[m(B[0;1m[31me[39m(B[m(B[0;1m[31mn[39m(B[m(B[0;1m[31ma[39m(B[m(B[0;1m[31mm[39m(B[m(B[0;1m[31me[39m(B[m[6dd[32mdo[39m(B[mdon[32mdone[39m(B[m[A[1P   [1P  [1P [1P[A[5d[6d[A[A[5d[6d[A (B[0;1m[34mcp[39m(B[m (B[0;1m[31m$filename[39m(B[m original-(B[0;1m[31m$filename[C[39m(B[m  (B[0;1m[34mcp[39m(B[m (B[0;1m[31m$filename[39m(B[m original-(B[0;1m[31m$filename[3G[39m(B[m   (B[0;1m[34mcp[39m(B[m (B[0;1m[31m$filename[39m(B[m original-(B[0;1m[31m$filename[4G[39m(B[m    (B[0;1m[34mcp[39m(B[m (B[0;1m[31m$filename[39m(B[m original-(B[0;1m[31m$filename[5G[39m(B[m[C[C [C[C[C[C[C[C[C[C[C original-[C[C[C[C[C[C[C[C[C[6d[C[C[C[C[7d[32d(B[0;7mFile Name to Write: save-originals.sh                                                       [33;16H(B[m   (B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append        (B[0;7mM-B(B[m Backup File[K[34;2H(B[0;7mC(B[m Cancel[16G   (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend       (B[0;7m^T(B[m To Files[K[32;38H[?25l[39;49m(B[m[1K (B[0;7m[ Wrote 4 lines ](B[m[K[7d[?12l[?25h[1;83H(B[0;7m        [33;16H^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[34;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Linter   (B[0;7m^_(B[m Go To Line[7d[32d[J[34;92H[34;1H[?1049l[?1l>]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ ls
+basilisk.dat  save-originals.sh  unicorn.dat
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ bash save-originals.sh 
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ ls
+basilisk.dat  original-basilisk.dat  original-unicorn.dat  save-originals.sh  unicorn.dat
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ rm original-*
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ ls
+basilisk.dat  save-originals.sh  unicorn.dat
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ nano save-originals.sh 
+[?1049h[1;34r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[32;39H(B[0;7m[ Reading File ][3d(B[m[32;45H(B[0;7m 4 lines[7d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3               File: save-originals.sh                                      [3;1H(B[0m[32mfor[39m(B[m filename [32min[39m(B[m *.dat[4d[32mdo[5;5H(B[0;1m[34mcp[39m(B[m (B[0;1m[31m$filename[39m(B[m original-(B[0;1m[31m$filename[6d(B[0m[32mdone[33d[39m(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[34d(B[0;7m^X(B[m Exit[34;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Linter   (B[0;7m^_(B[m Go To Line[3d[4d[A[2;31r[2;1HM[1;34r[1;83H(B[0;7mModified[4d(B[m[A[2;31r[2;1HM[1;34r[4;1H[A[36m#[39m(B[m[36m![39m(B[m[36m/[39m(B[m [36mb[39m(B[m[36ma[39m(B[m[36ms[39m(B[m[36mh[39m(B[m[32d(B[0;7mFile Name to Write: save-originals.sh                                                       [33;16H(B[m   (B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append        (B[0;7mM-B(B[m Backup File[K[34;2H(B[0;7mC(B[m Cancel[16G   (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend       (B[0;7m^T(B[m To Files[K[32;38H[?25l[39;49m(B[m[1K (B[0;7m[ Wrote 6 lines ](B[m[K[3;7H[?12l[?25h[1;83H(B[0;7m        [33;16H^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[34;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Linter   (B[0;7m^_(B[m Go To Line[3;7H[32d[J[34;92H[34;1H[?1049l[?1l>]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ ls -l
+total 12
+-rw-r--r-- 1 azaghal azaghal 1838 May 15 22:45 basilisk.dat
+-rw-rw-r-- 1 azaghal azaghal   74 May 19 16:28 save-originals.sh
+-rw-r--r-- 1 azaghal azaghal 1833 May 15 22:45 unicorn.dat
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ chmod [K[K[K[K[K[Kls
+basilisk.dat  save-originals.sh  unicorn.dat
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ bash [K[K[K[K[Kchmod +x save-originals.sh 
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ ls -l
+total 12
+-rw-r--r-- 1 azaghal azaghal 1838 May 15 22:45 basilisk.dat
+-rwxrwxr-x 1 azaghal azaghal   74 May 19 16:28 [0m[01;32msave-originals.sh[0m
+-rw-r--r-- 1 azaghal azaghal 1833 May 15 22:45 unicorn.dat
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ nano[Ko[K[K[K[Ksave-originals.sh
+save-originals.sh: command not found
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ ./save-originals.sh 
+bash: ./save-originals.sh: bash: bad interpreter: No such file or directory
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ nano save-originals.sh 
+[?1049h[1;34r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[32;39H(B[0;7m[ Reading File ][3d(B[m[32;45H(B[0;7m 6 lines[9d(B[m[?12l[?25h[H[39;49m(B[0;7m  GNU nano 2.5.3               File: save-originals.sh                                      [3;1H(B[0m[36m#!bash[5d[32mfor[39m(B[m filename [32min[39m(B[m *.dat[6d[32mdo[7;5H(B[0;1m[34mcp[39m(B[m (B[0;1m[31m$filename[39m(B[m original-(B[0;1m[31m$filename[8d(B[0m[32mdone[33d[39m(B[0;7m^G(B[m Get Help    (B[0;7m^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[34d(B[0;7m^X(B[m Exit[34;16H(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Linter   (B[0;7m^_(B[m Go To Line[3d[C[C[1;83H(B[0;7mModified[3;3H(B[0m[36mibash[39m(B[m[36m/bash[39m(B[m[36mbbash[39m(B[m[36mibash[39m(B[m[36mnbash[39m(B[m[36m/bash[39m(B[m[1P[32d(B[0;7mFile Name to Write: save-originals.sh                                                       [33;16H(B[m   (B[0;7mM-D(B[m DOS Format    (B[0;7mM-A(B[m Append        (B[0;7mM-B(B[m Backup File[K[34;2H(B[0;7mC(B[m Cancel[16G   (B[0;7mM-M(B[m Mac Format    (B[0;7mM-P(B[m Prepend       (B[0;7m^T(B[m To Files[K[32;38H[?25l[39;49m(B[m[1K (B[0;7m[ Wrote 6 lines ](B[m[K[3;3H[?12l[?25h[1;83H(B[0;7m        [33;16H^O(B[m Write Out   (B[0;7m^W(B[m Where Is    (B[0;7m^K(B[m Cut Text    (B[0;7m^J(B[m Justify     (B[0;7m^C(B[m Cur Pos[34;2H(B[0;7mX(B[m Exit  [16G(B[0;7m^R(B[m Read File   (B[0;7m^\(B[m Replace     (B[0;7m^U(B[m Uncut Text  (B[0;7m^T(B[m To Linter   (B[0;7m^_(B[m Go To Line[3;3H[32d[J[34;92H[34;1H[?1049l[?1l>]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ nano save-originals.sh [3P./[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ ls
+basilisk.dat  original-basilisk.dat  original-unicorn.dat  [0m[01;32msave-originals.sh[0m  unicorn.dat
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ ls -a -F
+[0m[01;34m.[0m/   basilisk.dat           original-unicorn.dat  unicorn.dat
+[01;34m..[0m/  original-basilisk.dat  [01;32msave-originals.sh[0m*
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ ls -aF
+[0m[01;34m.[0m/   basilisk.dat           original-unicorn.dat  unicorn.dat
+[01;34m..[0m/  original-basilisk.dat  [01;32msave-originals.sh[0m*
+]0;azaghal@Nogrod: ~/session-1/data-shell/creaturesazaghal@Nogrod:~/session-1/data-shell/creatures$ ls --[Khelp[K[K[K[K[K[K[K[Kcd ../..
+]0;azaghal@Nogrod: ~/session-1azaghal@Nogrod:~/session-1$ ls
+[0m[01;34mAutomation[0m  [01;34mdata-shell[0m  [01;34mPython_Visualization[0m
+]0;azaghal@Nogrod: ~/session-1azaghal@Nogrod:~/session-1$ cd Automation/
+]0;azaghal@Nogrod: ~/session-1/Automationazaghal@Nogrod:~/session-1/Automation$ ls
+notes.md  [0m[01;34mpart0_manual[0m  [01;34mpart1_make_intro[0m  [01;34mpart2_make_recursive[0m
+]0;azaghal@Nogrod: ~/session-1/Automationazaghal@Nogrod:~/session-1/Automation$ exit
+exit
+[32m~ Asciicast recording finished.[0m
+]0;azaghal@Nogrod: ~/session-1azaghal@Nogrod:~/session-1$ exit
+exit
+
+Script done on Fri 19 May 2017 04:35:44 PM MDT

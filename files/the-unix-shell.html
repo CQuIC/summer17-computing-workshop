@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<style type="text/css">
+pre {
+  font-family:Courier New;
+  font-size:10pt;
+}
+
+</style>
+<title>the-unix-shell.txt</title>
+</head>
+<body>
+<pre>Script started on Fri 19 May 2017 03:17:39 PM MDT
+azaghal&#64;Nogrod:~/session-1$ asciinema rec --max-wait=2 ~/the-unix-shell.json
+<span style="color:#00cd00;">~ Asciicast recording started.</span>
+<span style="color:#00cd00;">~ Hit Ctrl-D or type &quot;exit&quot; to finish.</span>
+azaghal&#64;Nogrod:~/session-1$ clear
+azaghal&#64;Nogrod:~/session-1$ pwd
+/home/azaghal/session-1
+azaghal&#64;Nogrod:~/session-1$ pwd
+/home/azaghal/session-1
+azaghal&#64;Nogrod:~/session-1$ ls
+<span style="font-weight:bold;color:#5c5cff;">Automation</span>  <span style="font-weight:bold;color:#5c5cff;">data-shell</span>  <span style="font-weight:bold;color:#5c5cff;">Python_Visualization</span>
+azaghal&#64;Nogrod:~/session-1$ cd data-shell/
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>    nano.save           notes.txt  solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ cd data
+azaghal&#64;Nogrod:~/session-1/data-shell/data$ ls
+amino-acids.txt  animals.txt  morse.txt  planets.txt  sunspot.txt
+<span style="font-weight:bold;color:#5c5cff;">animal-counts</span>    <span style="font-weight:bold;color:#5c5cff;">elements</span>     <span style="font-weight:bold;color:#5c5cff;">pdb</span>        salmon.txt
+azaghal&#64;Nogrod:~/session-1/data-shell/data$ c
+amino-acids.txt  animals.txt  morse.txt  planets.txt  sunspot.txt
+<span style="font-weight:bold;color:#5c5cff;">animal-counts</span>    <span style="font-weight:bold;color:#5c5cff;">elements</span>     <span style="font-weight:bold;color:#5c5cff;">pdb</span>        salmon.txt
+azaghal&#64;Nogrod:~/session-1/data-shell/data$ cd ..
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>    nano.save           notes.txt  solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ cd north-pacific-gyre/
+azaghal&#64;Nogrod:~/session-1/data-shell/north-pacific-gyre$ ls
+<span style="font-weight:bold;color:#5c5cff;">2012-07-03</span>
+azaghal&#64;Nogrod:~/session-1/data-shell/north-pacific-gyre$ cd 2012-07-03/
+azaghal&#64;Nogrod:~/session-1/data-shell/north-pacific-gyre/2012-07-03$ ls
+do-stats.sh     NENE01843A.txt  NENE02043A.txt        stats-NENE01843A.txt
+goodiff         NENE01843B.txt  NENE02043B.txt        stats-NENE01843B.txt
+goostats        NENE01971Z.txt  stats-datafile        stats-NENE01978A.txt
+NENE01729A.txt  NENE01978A.txt  stats-NENE01729A.txt  stats-NENE01978B.txt
+NENE01729B.txt  NENE01978B.txt  stats-NENE01729B.txt  stats-NENE02018B.txt
+NENE01736A.txt  NENE02018B.txt  stats-NENE01736A.txt  stats-NENE02040A.txt
+NENE01751A.txt  NENE02040A.txt  stats-NENE01751A.txt  stats-NENE02040B.txt
+NENE01751B.txt  NENE02040B.txt  stats-NENE01751B.txt  stats-NENE02043A.txt
+NENE01812A.txt  NENE02040Z.txt  stats-NENE01812A.txt  stats-NENE02043B.txt
+azaghal&#64;Nogrod:~/session-1/data-shell/north-pacific-gyre/2012-07-03$ pwd
+/home/azaghal/session-1/data-shell/north-pacific-gyre/2012-07-03
+azaghal&#64;Nogrod:~/session-1/data-shell/north-pacific-gyre/2012-07-03$ cd /home/azaghal/see
+azaghal&#64;Nogrod:~/session-1/data-shell$ pwd
+/home/azaghal/session-1/data-shell
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>    nano.save           notes.txt  solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ mkdir &quot;dir with space&quot;
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>         <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">dir with space</span>  nano.save  notes.txt           solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ cd &quot;dir with space&quot;/
+azaghal&#64;Nogrod:~/session-1/data-shell/dir with space$ cd ..
+azaghal&#64;Nogrod:~/session-1/data-shell$ \
+azaghal&#64;Nogrod:~/session-1/data-shell/dir with space$ cd dir wih 
+bash: cd: dir: No such file or directory
+azaghal&#64;Nogrod:~/session-1/data-shell/dir with space$ ls -F
+azaghal&#64;Nogrod:~/session-1/data-shell/dir with space$ cd ..
+azaghal&#64;Nogrod:~/session-1/data-shell$ p
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>/  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>/         <span style="font-weight:bold;color:#5c5cff;">molecules</span>/  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>/  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>/
+<span style="font-weight:bold;color:#5c5cff;">data</span>/       <span style="font-weight:bold;color:#5c5cff;">dir with space</span>/  nano.save   notes.txt            solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>/
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>         <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">dir with space</span>  nano.save  notes.txt           solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls --help
+Usage: ls [OPTION]... [FILE]...
+List information about the FILEs (the current directory by default).
+Sort entries alphabetically if none of -cftuvSUX nor --sort is specified.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -a, --all                  do not ignore entries starting with .
+  -A, --almost-all           do not list implied . and ..
+      --author               with -l, print the author of each file
+  -b, --escape               print C-style escapes for nongraphic characters
+      --block-size=SIZE      scale sizes by SIZE before printing them; e.g.,
+                               &apos;--block-size=M&apos; prints sizes in units of
+                               1,048,576 bytes; see SIZE format below
+  -B, --ignore-backups       do not list implied entries ending with ~
+  -c                         with -lt: sort by, and show, ctime (time of last
+                               modification of file status information);
+                               with -l: show ctime and sort by name;
+                               otherwise: sort by ctime, newest first
+  -C                         list entries by columns
+      --color[=WHEN]         colorize the output; WHEN can be &apos;always&apos; (default
+                               if omitted), &apos;auto&apos;, or &apos;never&apos;; more info below
+  -d, --directory            list directories themselves, not their contents
+  -D, --dired                generate output designed for Emacs&apos; dired mode
+  -f                         do not sort, enable -aU, disable -ls --color
+  -F, --classify             append indicator (one of */=&gt;&#64;|) to entries
+      --file-type            likewise, except do not append &apos;*&apos;
+      --format=WORD          across -x, commas -m, horizontal -x, long -l,
+                               single-column -1, verbose -l, vertical -C
+      --full-time            like -l --time-style=full-iso
+  -g                         like -l, but do not list owner
+      --group-directories-first
+                             group directories before files;
+                               can be augmented with a --sort option, but any
+                               use of --sort=none (-U) disables grouping
+  -G, --no-group             in a long listing, don&apos;t print group names
+  -h, --human-readable       with -l and/or -s, print human readable sizes
+                               (e.g., 1K 234M 2G)
+      --si                   likewise, but use powers of 1000 not 1024
+  -H, --dereference-command-line
+                             follow symbolic links listed on the command line
+      --dereference-command-line-symlink-to-dir
+                             follow each command line symbolic link
+                               that points to a directory
+      --hide=PATTERN         do not list implied entries matching shell PATTERN
+                               (overridden by -a or -A)
+      --indicator-style=WORD  append indicator with style WORD to entry names:
+                               none (default), slash (-p),
+                               file-type (--file-type), classify (-F)
+  -i, --inode                print the index number of each file
+  -I, --ignore=PATTERN       do not list implied entries matching shell PATTERN
+  -k, --kibibytes            default to 1024-byte blocks for disk usage
+  -l                         use a long listing format
+  -L, --dereference          when showing file information for a symbolic
+                               link, show information for the file the link
+                               references rather than for the link itself
+  -m                         fill width with a comma separated list of entries
+  -n, --numeric-uid-gid      like -l, but list numeric user and group IDs
+  -N, --literal              print raw entry names (don&apos;t treat e.g. control
+                               characters specially)
+  -o                         like -l, but do not list group information
+  -p, --indicator-style=slash
+                             append / indicator to directories
+  -q, --hide-control-chars   print ? instead of nongraphic characters
+      --show-control-chars   show nongraphic characters as-is (the default,
+                               unless program is &apos;ls&apos; and output is a terminal)
+  -Q, --quote-name           enclose entry names in double quotes
+      --quoting-style=WORD   use quoting style WORD for entry names:
+                               literal, locale, shell, shell-always,
+                               shell-escape, shell-escape-always, c, escape
+  -r, --reverse              reverse order while sorting
+  -R, --recursive            list subdirectories recursively
+  -s, --size                 print the allocated size of each file, in blocks
+  -S                         sort by file size, largest first
+      --sort=WORD            sort by WORD instead of name: none (-U), size (-S),
+                               time (-t), version (-v), extension (-X)
+      --time=WORD            with -l, show time as WORD instead of default
+                               modification time: atime or access or use (-u);
+                               ctime or status (-c); also use specified time
+                               as sort key if --sort=time (newest first)
+      --time-style=STYLE     with -l, show times using style STYLE:
+                               full-iso, long-iso, iso, locale, or +FORMAT;
+                               FORMAT is interpreted like in &apos;date&apos;; if FORMAT
+                               is FORMAT1&lt;newline&gt;FORMAT2, then FORMAT1 applies
+                               to non-recent files and FORMAT2 to recent files;
+                               if STYLE is prefixed with &apos;posix-&apos;, STYLE
+                               takes effect only outside the POSIX locale
+  -t                         sort by modification time, newest first
+  -T, --tabsize=COLS         assume tab stops at each COLS instead of 8
+  -u                         with -lt: sort by, and show, access time;
+                               with -l: show access time and sort by name;
+                               otherwise: sort by access time, newest first
+  -U                         do not sort; list entries in directory order
+  -v                         natural sort of (version) numbers within text
+  -w, --width=COLS           set output width to COLS.  0 means no limit
+  -x                         list entries by lines instead of by columns
+  -X                         sort alphabetically by entry extension
+  -Z, --context              print any security context of each file
+  -1                         list one file per line.  Avoid &apos;\n&apos; with -q or -b
+      --help     display this help and exit
+      --version  output version information and exit
+
+The SIZE argument is an integer and optional unit (example: 10K is 10*1024).
+Units are K,M,G,T,P,E,Z,Y (powers of 1024) or KB,MB,... (powers of 1000).
+
+Using color to distinguish file types is disabled both by default and
+with --color=never.  With --color=auto, ls emits color codes only when
+standard output is connected to a terminal.  The LS_COLORS environment
+variable can change the settings.  Use the dircolors command to set it.
+
+Exit status:
+ 0  if OK,
+ 1  if minor problems (e.g., cannot access subdirectory),
+ 2  if serious trouble (e.g., cannot access command-line argument).
+
+GNU coreutils online help: &lt;http://www.gnu.org/software/coreutils/&gt;
+Full documentation at: &lt;http://www.gnu.org/software/coreutils/ls&gt;
+or available locally via: info &apos;(coreutils) ls invocation&apos;
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls -a
+<span style="font-weight:bold;color:#5c5cff;">.</span>              <span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">dir with space</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  solar.pdf
+<span style="font-weight:bold;color:#5c5cff;">..</span>             <span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">molecules</span>       notes.txt           <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+.bash_profile  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>    nano.save       pizza.cfg           <span style="font-weight:bold;color:#5c5cff;">writing</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>         <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">dir with space</span>  nano.save  notes.txt           solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>         <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">dir with space</span>  nano.save  notes.txt           solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ ./
+=LS(1)                                 User Commands                                 LS(1)
+
+<span style="font-weight:bold;color:#7f7f7f;">NAME</span>
+       ls - list directory contents
+
+<span style="font-weight:bold;color:#7f7f7f;">SYNOPSIS</span>
+       <span style="font-weight:bold;color:#7f7f7f;">ls</span> [<span style="text-decoration:underline;">OPTION</span>]... [<span style="text-decoration:underline;">FILE</span>]...
+
+<span style="font-weight:bold;color:#7f7f7f;">DESCRIPTION</span>
+       List information about the FILEs (the current directory by default).  Sort entries
+       alphabetically if none of <span style="font-weight:bold;color:#7f7f7f;">-cftuvSUX</span> nor <span style="font-weight:bold;color:#7f7f7f;">--sort</span> is specified.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       <span style="font-weight:bold;color:#7f7f7f;">-a</span>, <span style="font-weight:bold;color:#7f7f7f;">--all</span>
+              do not ignore entries starting with .
+
+       <span style="font-weight:bold;color:#7f7f7f;">-A</span>, <span style="font-weight:bold;color:#7f7f7f;">--almost-all</span>
+              do not list implied . and ..
+
+       <span style="font-weight:bold;color:#7f7f7f;">--author</span>
+              with <span style="font-weight:bold;color:#7f7f7f;">-l</span>, print the author of each file
+
+       <span style="font-weight:bold;color:#7f7f7f;">-b</span>, <span style="font-weight:bold;color:#7f7f7f;">--escape</span>
+              print C-style escapes for nongraphic characters
+
+       <span style="font-weight:bold;color:#7f7f7f;">--block-size</span>=<span style="text-decoration:underline;">SIZE</span>
+              scale sizes by SIZE before printing  them;  e.g.,  &apos;--block-size=M&apos;  prints
+              sizes in units of 1,048,576 bytes; see SIZE format below
+
+       <span style="font-weight:bold;color:#7f7f7f;">-B</span>, <span style="font-weight:bold;color:#7f7f7f;">--ignore-backups</span>
+              do not list implied entries ending with ~
+
+<span style="color:#000000;background-color:#000000;"> Manual page ls(1) line 1 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+</span><span style="color:#000000;background-color:#000000;"> Manual page ls(1) line 2 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+</span><span style="color:#000000;background-color:#000000;"> Manual page ls(1) line 3 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+</span><span style="color:#000000;background-color:#000000;"> Manual page ls(1) line 4 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+</span><span style="color:#000000;background-color:#000000;"> Manual page ls(1) line 5 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+</span><span style="color:#000000;background-color:#000000;"> Manual page ls(1) line 6 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+</span><span style="color:#000000;background-color:#000000;"> Manual page ls(1) line 7 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+</span><span style="color:#000000;background-color:#000000;"> Manual page ls(1) line 8 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+</span><span style="color:#000000;background-color:#000000;"> Manual page ls(1) line 9 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+
+
+
+
+
+
+
+
+</span>
+<span style="font-weight:bold;color:#7f7f7f;">NAME</span>
+       ls - list directory contents
+
+<span style="font-weight:bold;color:#7f7f7f;">SYNOPSIS</span>
+       <span style="font-weight:bold;color:#7f7f7f;">ls</span> [<span style="text-decoration:underline;">OPTION</span>]... [<span style="text-decoration:underline;">FILE</span>]...
+
+<span style="font-weight:bold;color:#7f7f7f;">DESCRIPTION</span>
+       List information about the FILEs (the current directory by default).  Sort entries
+       alphabetically if none of <span style="font-weight:bold;color:#7f7f7f;">-cftuvSUX</span> nor <span style="font-weight:bold;color:#7f7f7f;">--sort</span> is specified.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       <span style="font-weight:bold;color:#7f7f7f;">-a</span>, <span style="font-weight:bold;color:#7f7f7f;">--all</span>
+              do not ignore entries starting with .
+
+       <span style="font-weight:bold;color:#7f7f7f;">-A</span>, <span style="font-weight:bold;color:#7f7f7f;">--almost-all</span>
+              do not list implied . and ..
+
+       <span style="font-weight:bold;color:#7f7f7f;">--author</span>
+              with <span style="font-weight:bold;color:#7f7f7f;">-l</span>, print the author of each file
+
+       <span style="font-weight:bold;color:#7f7f7f;">-b</span>, <span style="font-weight:bold;color:#7f7f7f;">--escape</span>
+              print C-style escapes for nongraphic characters
+
+       <span style="font-weight:bold;color:#7f7f7f;">--block-size</span>=<span style="text-decoration:underline;">SIZE</span>
+              scale sizes by SIZE before printing  them;  e.g.,  &apos;--block-size=M&apos;  prints
+              sizes in units of 1,048,576 bytes; see SIZE format below
+
+       <span style="font-weight:bold;color:#7f7f7f;">-B</span>, <span style="font-weight:bold;color:#7f7f7f;">--ignore-backups</span>
+              do not list implied entries ending with ~
+
+LS(1)                                 User Commands                                 LS(1)
+
+<span style="font-weight:bold;color:#7f7f7f;">NAME</span>
+       ls - list <span style="color:#000000;background-color:#000000;">directory</span><span style="color:#000000;background-color:#000000;"> contents</span>
+
+<span style="font-weight:bold;color:#7f7f7f;">SYNOPSIS</span>
+       <span style="font-weight:bold;color:#7f7f7f;">ls</span> [<span style="text-decoration:underline;">OPTION</span>]... [<span style="text-decoration:underline;">FILE</span>]...
+
+<span style="font-weight:bold;color:#7f7f7f;">DESCRIPTION</span>
+       List information about the FILEs (the current <span style="color:#000000;background-color:#000000;">directory</span><span style="color:#000000;background-color:#000000;"> by default).  Sort entries</span>
+       alphabetically if none of <span style="font-weight:bold;color:#7f7f7f;">-cftuvSUX</span> nor <span style="font-weight:bold;color:#7f7f7f;">--sort</span> is specified.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       <span style="font-weight:bold;color:#7f7f7f;">-a</span>, <span style="font-weight:bold;color:#7f7f7f;">--all</span>
+              do not ignore entries starting with .
+
+       <span style="font-weight:bold;color:#7f7f7f;">-A</span>, <span style="font-weight:bold;color:#7f7f7f;">--almost-all</span>
+              do not list implied . and ..
+
+       <span style="font-weight:bold;color:#7f7f7f;">--author</span>
+              with <span style="font-weight:bold;color:#7f7f7f;">-l</span>, print the author of each file
+
+       <span style="font-weight:bold;color:#7f7f7f;">-b</span>, <span style="font-weight:bold;color:#7f7f7f;">--escape</span>
+              print C-style escapes for nongraphic characters
+
+       <span style="font-weight:bold;color:#7f7f7f;">--block-size</span>=<span style="text-decoration:underline;">SIZE</span>
+              scale sizes by SIZE before printing  them;  e.g.,  &apos;--block-size=M&apos;  prints
+              sizes in units of 1,048,576 bytes; see SIZE format below
+
+       <span style="font-weight:bold;color:#7f7f7f;">-B</span>, <span style="font-weight:bold;color:#7f7f7f;">--ignore-backups</span>
+              do not list implied entries ending with ~
+
+       <span style="font-weight:bold;color:#7f7f7f;">-c</span>     with  <span style="font-weight:bold;color:#7f7f7f;">-lt</span>: sort by, and show, ctime (time of last modification of file sta‐
+              tus information); with <span style="font-weight:bold;color:#7f7f7f;">-l</span>: show ctime and sort by name; otherwise: sort  by
+              ctime, newest first
+<span style="color:#000000;background-color:#000000;"> Manual page ls(1) line 4 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+</span><span style="font-weight:bold;color:#5c5cff;">Automation</span>  <span style="font-weight:bold;color:#5c5cff;">data-shell</span>  <span style="font-weight:bold;color:#5c5cff;">Python_Visualization</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>         <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">dir with space</span>  nano.save  notes.txt           solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls data
+amino-acids.txt  animals.txt  morse.txt  planets.txt  sunspot.txt
+<span style="font-weight:bold;color:#5c5cff;">animal-counts</span>    <span style="font-weight:bold;color:#5c5cff;">elements</span>     <span style="font-weight:bold;color:#5c5cff;">pdb</span>        salmon.txt
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls -F -a data
+<span style="font-weight:bold;color:#5c5cff;">.</span>/   amino-acids.txt  animals.txt  morse.txt  planets.txt  sunspot.txt
+<span style="font-weight:bold;color:#5c5cff;">..</span>/  <span style="font-weight:bold;color:#5c5cff;">animal-counts</span>/   <span style="font-weight:bold;color:#5c5cff;">elements</span>/    <span style="font-weight:bold;color:#5c5cff;">pdb</span>/       salmon.txt
+azaghal&#64;Nogrod:~/session-1/data-shell$ man ls
+=LS(1)                                 User Commands                                 LS(1)
+
+<span style="font-weight:bold;color:#7f7f7f;">NAME</span>
+       ls - list directory contents
+
+<span style="font-weight:bold;color:#7f7f7f;">SYNOPSIS</span>
+       <span style="font-weight:bold;color:#7f7f7f;">ls</span> [<span style="text-decoration:underline;">OPTION</span>]... [<span style="text-decoration:underline;">FILE</span>]...
+
+<span style="font-weight:bold;color:#7f7f7f;">DESCRIPTION</span>
+       List information about the FILEs (the current directory by default).  Sort entries
+       alphabetically if none of <span style="font-weight:bold;color:#7f7f7f;">-cftuvSUX</span> nor <span style="font-weight:bold;color:#7f7f7f;">--sort</span> is specified.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       <span style="font-weight:bold;color:#7f7f7f;">-a</span>, <span style="font-weight:bold;color:#7f7f7f;">--all</span>
+              do not ignore entries starting with .
+
+       <span style="font-weight:bold;color:#7f7f7f;">-A</span>, <span style="font-weight:bold;color:#7f7f7f;">--almost-all</span>
+              do not list implied . and ..
+
+       <span style="font-weight:bold;color:#7f7f7f;">--author</span>
+              with <span style="font-weight:bold;color:#7f7f7f;">-l</span>, print the author of each file
+
+       <span style="font-weight:bold;color:#7f7f7f;">-b</span>, <span style="font-weight:bold;color:#7f7f7f;">--escape</span>
+              print C-style escapes for nongraphic characters
+
+       <span style="font-weight:bold;color:#7f7f7f;">--block-size</span>=<span style="text-decoration:underline;">SIZE</span>
+              scale sizes by SIZE before printing  them;  e.g.,  &apos;--block-size=M&apos;  prints
+              sizes in units of 1,048,576 bytes; see SIZE format below
+
+       <span style="font-weight:bold;color:#7f7f7f;">-B</span>, <span style="font-weight:bold;color:#7f7f7f;">--ignore-backups</span>
+              do not list implied entries ending with ~
+
+<span style="color:#000000;background-color:#000000;"> Manual page ls(1) line 1 (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+azaghal&#64;Nogrod:~/session-1/data-shell/north-pacific-gyre$ ls
+</span><span style="font-weight:bold;color:#5c5cff;">2012-07-03</span>
+azaghal&#64;Nogrod:~/session-1/data-shell/north-pacific-gyre$ mkdir 2012-7-2
+azaghal&#64;Nogrod:~/session-1/data-shell/north-pacific-gyre$ ls
+<span style="font-weight:bold;color:#5c5cff;">2012-07-03</span>  <span style="font-weight:bold;color:#5c5cff;">2012-7-2</span>
+azaghal&#64;Nogrod:~/session-1/data-shell/north-pacific-gyre$ ls
+azaghal&#64;Nogrod:~/session-1/data-shell/north-pacific-gyre$ ls
+<span style="font-weight:bold;color:#5c5cff;">2012-07-02</span>  <span style="font-weight:bold;color:#5c5cff;">2012-07-03</span>
+azaghal&#64;Nogrod:~/session-1/data-shell/north-pacific-gyre$ cd ~/jupyter/research-notebook/
+azaghal&#64;Nogrod:~/jupyter/research-notebook$ ls
+<span style="font-weight:bold;color:#5c5cff;">2016</span>  <span style="font-weight:bold;color:#5c5cff;">2017</span>  notebook-for-qi.ipynb  table-of-contents.html  <span style="font-weight:bold;color:#00ff00;">update-toc.sh</span>
+azaghal&#64;Nogrod:~/jupyter/research-notebook$ cd 2016
+azaghal&#64;Nogrod:~/jupyter/research-notebook/2017$ ls
+<span style="font-weight:bold;color:#5c5cff;">01</span>  <span style="font-weight:bold;color:#5c5cff;">02</span>  <span style="font-weight:bold;color:#5c5cff;">03</span>  <span style="font-weight:bold;color:#5c5cff;">04</span>  <span style="font-weight:bold;color:#5c5cff;">05</span>
+azaghal&#64;Nogrod:~/jupyter/research-notebook/2017$ cd 0
+azaghal&#64;Nogrod:~/jupyter/research-notebook/2017/05$ ls
+2017-05-01.ipynb  2017-05-02-a.ipynb  2017-05-02-b.ipynb
+azaghal&#64;Nogrod:~/jupyter/research-notebook/2017/05$ cd ../..
+azaghal&#64;Nogrod:~/jupyter/research-notebook$ ls
+<span style="font-weight:bold;color:#5c5cff;">2016</span>  <span style="font-weight:bold;color:#5c5cff;">2017</span>  notebook-for-qi.ipynb  table-of-contents.html  <span style="font-weight:bold;color:#00ff00;">update-toc.sh</span>
+azaghal&#64;Nogrod:~/jupyter/research-notebook$ 
+<span style="font-weight:bold;color:#5c5cff;">2016</span>  <span style="font-weight:bold;color:#5c5cff;">2017</span>  notebook-for-qi.ipynb  table-of-contents.html  <span style="font-weight:bold;color:#00ff00;">update-toc.sh</span>
+azaghal&#64;Nogrod:~/jupyter/research-notebook$ cd ~/session-1/data-shell/
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>         <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">dir with space</span>  nano.save  notes.txt           solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ mkdir &quot;
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>            <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">dir-without-space</span>  nano.save  notes.txt           solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ nano draft.txt
+(B===(B(B<span style="color:#000000;background-color:#000000;">[ New File ](B</span>(B  GNU nano 2.5.3                  File: draft.txt                                           ^G(B Get Help    (B^O(B Write Out   (B^W(B Where Is    (B^K(B Cut Text    (B^J(B Justify     (B^C(B Cur Pos(B^X(B Exit(B^R(B Read File   (B^\(B Replace     (B^U(B Uncut Text  (B^T(B To Spell    (B^_(B Go To Line(BModified(BThis is not  longer a blan
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>            draft.txt  nano.save           notes.txt  solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">dir-without-space</span>  <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ nano /home/azaghal/session-1/data-shell/draft2.txt
+(B===(B(B[ New File ](B(B  GNU nano 2.5.3      File: /home/azaghal/session-1/data-shell/draft2.txt                   ^G(B Get Help    (B^O(B Write Out   (B^W(B Where Is    (B^K(B Cut Text    (B^J(B Justify     (B^C(B Cur Pos(B^X(B Exit(B^R(B Read File   (B^\(B Replace     (B^U(B Uncut Text  (B^T(B To Spell    (B^_(B Go To Line(BModified(BSomething else(BFile Name to Write: /home/azaghal/session-1/data-shell/draft2.txt                           (B   (BM-D(B DOS Format    (BM-A(B Append        (BM-B(B Backup File
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>            draft2.txt  <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">dir-without-space</span>  draft.txt   nano.save  notes.txt           solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ nano draft.txt
+(B===(B(B[ Reading File ](B(B 1 line ](B(B  GNU nano 2.5.3                  File: draft.txt                                           (BThis is no longer a blank file.(B^G(B Get Help    (B^O(B Write Out   (B^W(B Where Is    (B^K(B Cut Text    (B^J(B Justify     (B^C(B Cur Pos(B^X(B Exit(B^R(B Read File   (B^\(B Replace     (B^U(B Uncut Text  (B^T(B To Spell    (B^_(B Go To Line&gt;azaghal&#64;Nogrod:~/session-1/data-shell$ rm draft.txt
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>            draft2.txt  nano.save           notes.txt  solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">dir-without-space</span>  <span style="font-weight:bold;color:#5c5cff;">molecules</span>   <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ mv draft2.txt dir-without-space/
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls mv
+draft2.txt
+azaghal&#64;Nogrod:~/session-1/data-shell$ rm dir-without-space/
+rm: cannot remove &apos;dir-without-space/&apos;: Is a directory
+azaghal&#64;Nogrod:~/session-1/data-shell$ rm -r -i dir-without-space/
+rm: descend into directory &apos;dir-without-space/&apos;? y
+rm: remove regular file &apos;dir-without-space/draft2.txt&apos;? y
+rm: remove directory &apos;dir-without-space/&apos;? y n
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>            <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">dir-without-space</span>  nano.save  notes.txt           solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls dir-without-space/
+azaghal&#64;Nogrod:~/session-1/data-shell$ rm -r dir-without-space/
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>    nano.save           notes.txt  solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls -r north-pacific-gyre/
+<span style="font-weight:bold;color:#5c5cff;">2012-07-03</span>  <span style="font-weight:bold;color:#5c5cff;">2012-07-02</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls -r north-pacific-gyre/ north-pacific-gyre/R north-pacific-gyre/
+north-pacific-gyre/:
+<span style="font-weight:bold;color:#5c5cff;">2012-07-02</span>  <span style="font-weight:bold;color:#5c5cff;">2012-07-03</span>
+
+north-pacific-gyre/2012-07-02:
+
+north-pacific-gyre/2012-07-03:
+do-stats.sh     NENE01843A.txt  NENE02043A.txt        stats-NENE01843A.txt
+goodiff         NENE01843B.txt  NENE02043B.txt        stats-NENE01843B.txt
+goostats        NENE01971Z.txt  stats-datafile        stats-NENE01978A.txt
+NENE01729A.txt  NENE01978A.txt  stats-NENE01729A.txt  stats-NENE01978B.txt
+NENE01729B.txt  NENE01978B.txt  stats-NENE01729B.txt  stats-NENE02018B.txt
+NENE01736A.txt  NENE02018B.txt  stats-NENE01736A.txt  stats-NENE02040A.txt
+NENE01751A.txt  NENE02040A.txt  stats-NENE01751A.txt  stats-NENE02040B.txt
+NENE01751B.txt  NENE02040B.txt  stats-NENE01751B.txt  stats-NENE02043A.txt
+NENE01812A.txt  NENE02040Z.txt  stats-NENE01812A.txt  stats-NENE02043B.txt
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>    nano.save           notes.txt  solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ nano draft.txt
+(B===(B(B[ New File ](B(B  GNU nano 2.5.3                  File: draft.txt                                           ^G(B Get Help    (B^O(B Write Out   (B^W(B Where Is    (B^K(B Cut Text    (B^J(B Justify     (B^C(B Cur Pos(B^X(B Exit(B^R(B Read File   (B^\(B Replace     (B^U(B Uncut Text  (B^T(B To Spell    (B^_(B Go To Line(BModified(BHello(BFile Name to Write: draft.txt                                                               (B   (BM-D(B DOS Format    (BM-A(B Append        (BM-B(B Backup File
+(B===(B(B[ New File ](B(B  GNU nano 2.5.3                  File: draft2.txt                                          ^G(B Get Help    (B^O(B Write Out   (B^W(B Where Is    (B^K(B Cut Text    (B^J(B Justify     (B^C(B Cur Pos(B^X(B Exit(B^R(B Read File   (B^\(B Replace     (B^U(B Uncut Text  (B^T(B To Spell    (B^_(B Go To Line(BModified(BThere(BFile Name to Write: draft2.txt                                                              (B   (BM-D(B DOS Format    (BM-A(B Append        (BM-B(B Backup File
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>     draft.txt  nano.save           notes.txt  solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       draft2.txt  <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ mv draft2.txt draft.txt
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>    <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       draft.txt  nano.save  notes.txt           solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ nano da
+(B===(B(B[ New File ](B(B  GNU nano 2.5.3                  File: draft2.txt                                          ^G(B Get Help    (B^O(B Write Out   (B^W(B Where Is    (B^K(B Cut Text    (B^J(B Justify     (B^C(B Cur Pos(B^X(B Exit(B^R(B Read File   (B^\(B Replace     (B^U(B Uncut Text  (B^T(B To Spell    (B^_(B Go To Line(BModified(BHello(BFile Name to Write: draft2.txt                                                              (B   (BM-D(B DOS Format    (BM-A(B Append        (BM-B(B Backup File
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>     draft.txt  nano.save           notes.txt  solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       draft2.txt  <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ mv -i drf
+mv: overwrite &apos;draft.txt&apos;? n
+azaghal&#64;Nogrod:~/session-1/data-shell$ rm draft.txt draft2.txt 
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>    nano.save           notes.txt  solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ cd ..
+azaghal&#64;Nogrod:~/session-1$ ls
+<span style="font-weight:bold;color:#5c5cff;">Automation</span>  <span style="font-weight:bold;color:#5c5cff;">data-shell</span>  <span style="font-weight:bold;color:#5c5cff;">Python_Visualization</span>
+azaghal&#64;Nogrod:~/session-1$ cd data-shell/north-pacific-gyre/2012-07-0
+2012-07-02/ 2012-07-03/ 
+azaghal&#64;Nogrod:~/session-1$ cd data-shell/north-pacific-gyre/2012-07-0
+2012-07-02/ 2012-07-03/ 
+azaghal&#64;Nogrod:~/session-1$ cd data-shell/north-pacific-gyre/2012-07-0
+2012-07-02/ 2012-07-03/ 
+azaghal&#64;Nogrod:~/session-1$ cd data-shell/north-pacific-gyre/2012-07-03
+azaghal&#64;Nogrod:~/session-1/data-shell/north-pacific-gyre/2012-07-03$ cd -
+/home/azaghal/session-1
+azaghal&#64;Nogrod:~/session-1$ cd -
+/home/azaghal/session-1/data-shell/north-pacific-gyre/2012-07-03
+azaghal&#64;Nogrod:~/session-1/data-shell/north-pacific-gyre/2012-07-03$ cd -
+/home/azaghal/session-1
+azaghal&#64;Nogrod:~/session-1$ cd ~
+azaghal&#64;Nogrod:~$ pwd
+/home/azaghal
+azaghal&#64;Nogrod:~$ cd
+azaghal&#64;Nogrod:~$ cd ~/session-1/
+azaghal&#64;Nogrod:~/session-1$ cd
+<span style="font-weight:bold;color:#5c5cff;">Automation</span>  <span style="font-weight:bold;color:#5c5cff;">data-shell</span>  <span style="font-weight:bold;color:#5c5cff;">Python_Visualization</span>
+azaghal&#64;Nogrod:~/session-1$ cd data-shell/
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>    nano.save           notes.txt  solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls molecules/
+cubane.pdb  lengths.txt  middle.sh   pentane.pdb  sorted-lengths.txt
+ethane.pdb  methane.pdb  octane.pdb  propane.pdb  sorted.sh
+azaghal&#64;Nogrod:~/session-1/data-shell$ cd molecules/
+azaghal&#64;Nogrod:~/session-1/data-shell/molecules$ ls
+cubane.pdb  lengths.txt  middle.sh   pentane.pdb  sorted-lengths.txt
+ethane.pdb  methane.pdb  octane.pdb  propane.pdb  sorted.sh
+azaghal&#64;Nogrod:~/session-1/data-shell/molecules$ nano cubane.pdb 
+(B===(B(B[ Reading File ](B(B[ Read 20 lines(B(B  GNU nano 2.5.3                  File: cubane.pdb                                          (BCOMPNDCUBANEAUTHORDAVE WOODCOCK  95 12 06ATOM1  C10.789  -0.852   0.504  1.00  0.00ATOM2  C1-0.161  -1.104  -0.624  1.00  0.00ATOM3  C1-1.262  -0.440   0.160  1.00  0.00ATOM4  C1-0.289  -0.202   1.284  1.00  0.00ATOM5  C11.203   0.513  -0.094  1.00  0.00ATOM6  C10.099   1.184   0.694  1.00  0.00ATOM7  C1-0.885   0.959  -0.460  1.00  0.00ATOM8  C10.236   0.283  -1.269  1.00  0.00ATOM9  H11.410  -1.631   0.942  1.00  0.00ATOM     10  H1-0.262  -2.112  -1.024  1.00  0.00ATOM     11  H1-2.224  -0.925   0.328  1.00  0.00ATOM     12  H1-0.468  -0.501   2.315  1.00  0.00ATOM     13  H12.224   0.892  -0.134  1.00  0.00ATOM     14  H10.240   2.112   1.251  1.00  0.00ATOM     15  H1-1.565   1.730  -0.831  1.00  0.00ATOM     16  H10.472   0.494  -2.315  1.00  0.00TER171END(B^G(B Get Help    (B^O(B Write Out   (B^W(B Where Is    (B^K(B Cut Text    (B^J(B Justify     (B^C(B Cur Pos(B^X(B Exit(B^R(B Read File   (B^\(B Replace     (B^U(B Uncut Text  (B^T(B To Spell    (B^_(B Go To Line(B[ line 1/21 (4%), col 1/19 (5%), char 0/1158 (0%) ](B
+  20  156 1158 cubane.pdb
+azaghal&#64;Nogrod:~/session-1/data-shell/molecules$ wc *.pdb
+  20  156 1158 cubane.pdb
+  12   84  622 ethane.pdb
+   9   57  422 methane.pdb
+  30  246 1828 octane.pdb
+  21  165 1226 pentane.pdb
+  15  111  825 propane.pdb
+ 107  819 6081 total
+azaghal&#64;Nogrod:~/session-1/data-shell/molecules$ wc -l *.pdb
+  20 cubane.pdb
+  12 ethane.pdb
+   9 methane.pdb
+  30 octane.pdb
+  21 pentane.pdb
+  15 propane.pdb
+ 107 total
+azaghal&#64;Nogrod:~/session-1/data-shell/molecules$ wc -l *.pdb &gt; lengths.txt
+azaghal&#64;Nogrod:~/session-1/data-shell/molecules$ ls
+cubane.pdb  lengths.txt  middle.sh   pentane.pdb  sorted-lengths.txt
+ethane.pdb  methane.pdb  octane.pdb  propane.pdb  sorted.sh
+azaghal&#64;Nogrod:~/session-1/data-shell/molecules$ nano lengths.txt 
+(B===(B(B[ Reading File ](B(B 7 lines(B(B  GNU nano 2.5.3                 File: lengths.txt                                          (B20 cubane.pdb12 ethane.pdb9 methane.pdb30 octane.pdb21 pentane.pdb15 propane.pdb 107 total(B^G(B Get Help    (B^O(B Write Out   (B^W(B Where Is    (B^K(B Cut Text    (B^J(B Justify     (B^C(B Cur Pos(B^X(B Exit(B^R(B Read File   (B^\(B Replace     (B^U(B Uncut Text  (B^T(B To Spell    (B^_(B Go To Line&gt;azaghal&#64;Nogrod:~/session-1/data-shell/molecules$ sort -n lengths.txt 
+   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+ 107 total
+azaghal&#64;Nogrod:~/session-1/data-shell/molecules$ wc -c *.pdb
+1158 cubane.pdb
+ 622 ethane.pdb
+ 422 methane.pdb
+1828 octane.pdb
+1226 pentane.pdb
+ 825 propane.pdb
+6081 total
+azaghal&#64;Nogrod:~/session-1/data-shell/molecules$ wc -c *.pdb|
+ 422 methane.pdb
+ 622 ethane.pdb
+ 825 propane.pdb
+1158 cubane.pdb
+1226 pentane.pdb
+1828 octane.pdb
+6081 total
+azaghal&#64;Nogrod:~/session-1/data-shell/molecules$ wc -l *pd
+   9 methane.pdb
+  12 ethane.pdb
+  15 propane.pdb
+  20 cubane.pdb
+  21 pentane.pdb
+  30 octane.pdb
+ 107 total
+azaghal&#64;Nogrod:~/session-1/data-shell/molecules$ ls
+cubane.pdb  lengths.txt  middle.sh   pentane.pdb  sorted-lengths.txt
+ethane.pdb  methane.pdb  octane.pdb  propane.pdb  sorted.sh
+azaghal&#64;Nogrod:~/session-1/data-shell/molecules$ ls 
+A bunch of things
+
+      2       4      19
+azaghal&#64;Nogrod:~/session-1/data-shell/molecules$ cd ..
+azaghal&#64;Nogrod:~/session-1/data-shell$ ls
+<span style="font-weight:bold;color:#5c5cff;">creatures</span>  <span style="font-weight:bold;color:#5c5cff;">Desktop</span>    nano.save           notes.txt  solar.pdf  <span style="font-weight:bold;color:#5c5cff;">writing</span>
+<span style="font-weight:bold;color:#5c5cff;">data</span>       <span style="font-weight:bold;color:#5c5cff;">molecules</span>  <span style="font-weight:bold;color:#5c5cff;">north-pacific-gyre</span>  pizza.cfg  <span style="font-weight:bold;color:#5c5cff;">thesis</span>
+azaghal&#64;Nogrod:~/session-1/data-shell$ cd creatures/
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ lss
+basilisk.dat  original-basilisk.dat  original-unicorn.dat  unicorn.dat
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ rm *
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ ls
+basilisk.dat  unicorn.dat
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ cp *.dat original-*.dat
+cp: target &apos;original-*.dat&apos; is not a directory
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ for filename in b
+&gt; do
+&gt;     cp filn
+&gt; done
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ ls
+basilisk.dat  original-basilisk.dat  original-unicorn.dat  unicorn.dat
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ man cp
+=CP(1)                                 User Commands                                 CP(1)
+
+<span style="font-weight:bold;color:#7f7f7f;">NAME</span>
+       cp - copy files and directories
+
+<span style="font-weight:bold;color:#7f7f7f;">SYNOPSIS</span>
+       <span style="font-weight:bold;color:#7f7f7f;">cp</span> [<span style="text-decoration:underline;">OPTION</span>]... [<span style="text-decoration:underline;">-T</span>] <span style="text-decoration:underline;">SOURCE</span> <span style="text-decoration:underline;">DEST</span>
+       <span style="font-weight:bold;color:#7f7f7f;">cp</span> [<span style="text-decoration:underline;">OPTION</span>]... <span style="text-decoration:underline;">SOURCE</span>... <span style="text-decoration:underline;">DIRECTORY</span>
+       <span style="font-weight:bold;color:#7f7f7f;">cp</span> [<span style="text-decoration:underline;">OPTION</span>]... <span style="text-decoration:underline;">-t</span> <span style="text-decoration:underline;">DIRECTORY</span> <span style="text-decoration:underline;">SOURCE</span>...
+
+<span style="font-weight:bold;color:#7f7f7f;">DESCRIPTION</span>
+       Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       <span style="font-weight:bold;color:#7f7f7f;">-a</span>, <span style="font-weight:bold;color:#7f7f7f;">--archive</span>
+              same as <span style="font-weight:bold;color:#7f7f7f;">-dR</span> <span style="font-weight:bold;color:#7f7f7f;">--preserve</span>=<span style="text-decoration:underline;">all</span>
+
+       <span style="font-weight:bold;color:#7f7f7f;">--attributes-only</span>
+              don&apos;t copy the file data, just the attributes
+
+       <span style="font-weight:bold;color:#7f7f7f;">--backup</span>[=<span style="text-decoration:underline;">CONTROL</span>]
+              make a backup of each existing destination file
+
+       <span style="font-weight:bold;color:#7f7f7f;">-b</span>     like <span style="font-weight:bold;color:#7f7f7f;">--backup</span> but does not accept an argument
+
+       <span style="font-weight:bold;color:#7f7f7f;">--copy-contents</span>
+              copy contents of special files when recursive
+
+       <span style="font-weight:bold;color:#7f7f7f;">-d</span>     same as <span style="font-weight:bold;color:#7f7f7f;">--no-dereference</span> <span style="font-weight:bold;color:#7f7f7f;">--preserve</span>=<span style="text-decoration:underline;">links</span>
+
+       <span style="font-weight:bold;color:#7f7f7f;">-f</span>, <span style="font-weight:bold;color:#7f7f7f;">--force</span>
+              if  an  existing destination file cannot be opened, remove it and try again
+ Manual page cp(1) line 1 (press h for help or q to quit)<span style="color:#000000;background-color:#000000;">
+</span>
+<span style="font-weight:bold;color:#7f7f7f;">NAME</span>
+       cp - copy files and directories
+
+<span style="font-weight:bold;color:#7f7f7f;">SYNOPSIS</span>
+       <span style="font-weight:bold;color:#7f7f7f;">cp</span> [<span style="text-decoration:underline;">OPTION</span>]... [<span style="text-decoration:underline;">-T</span>] <span style="text-decoration:underline;">SOURCE</span> <span style="text-decoration:underline;">DEST</span>
+       <span style="font-weight:bold;color:#7f7f7f;">cp</span> [<span style="text-decoration:underline;">OPTION</span>]... <span style="text-decoration:underline;">SOURCE</span>... <span style="text-decoration:underline;">DIRECTORY</span>
+       <span style="font-weight:bold;color:#7f7f7f;">cp</span> [<span style="text-decoration:underline;">OPTION</span>]... <span style="text-decoration:underline;">-t</span> <span style="text-decoration:underline;">DIRECTORY</span> <span style="text-decoration:underline;">SOURCE</span>...
+
+<span style="font-weight:bold;color:#7f7f7f;">DESCRIPTION</span>
+       Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       <span style="font-weight:bold;color:#7f7f7f;">-a</span>, <span style="font-weight:bold;color:#7f7f7f;">--archive</span>
+              same as <span style="font-weight:bold;color:#7f7f7f;">-dR</span> <span style="font-weight:bold;color:#7f7f7f;">--preserve</span>=<span style="text-decoration:underline;">all</span>
+
+       <span style="font-weight:bold;color:#7f7f7f;">--attributes-only</span>
+              don&apos;t copy the file data, just the attributes
+
+       <span style="font-weight:bold;color:#7f7f7f;">--backup</span>[=<span style="text-decoration:underline;">CONTROL</span>]
+              make a backup of each existing destination file
+
+       <span style="font-weight:bold;color:#7f7f7f;">-b</span>     like <span style="font-weight:bold;color:#7f7f7f;">--backup</span> but does not accept an argument
+
+       <span style="font-weight:bold;color:#7f7f7f;">--copy-contents</span>
+              copy contents of special files when recursive
+
+       <span style="font-weight:bold;color:#7f7f7f;">-d</span>     same as <span style="font-weight:bold;color:#7f7f7f;">--no-dereference</span> <span style="font-weight:bold;color:#7f7f7f;">--preserve</span>=<span style="text-decoration:underline;">links</span>
+
+       <span style="font-weight:bold;color:#7f7f7f;">-f</span>, <span style="font-weight:bold;color:#7f7f7f;">--force</span>
+              if  an  existing destination file cannot be opened, remove it and try again
+CP(1)                                 User Commands                                 CP(1)
+
+<span style="font-weight:bold;color:#7f7f7f;">NAME</span>
+       cp - copy files and directories
+
+<span style="font-weight:bold;color:#7f7f7f;">SYNOPSIS</span>
+       <span style="font-weight:bold;color:#7f7f7f;">cp</span> [<span style="text-decoration:underline;">OPTION</span>]... [<span style="text-decoration:underline;">-T</span>] <span style="text-decoration:underline;">SOURCE</span> <span style="text-decoration:underline;">DEST</span>
+       <span style="font-weight:bold;color:#7f7f7f;">cp</span> [<span style="text-decoration:underline;">OPTION</span>]... <span style="text-decoration:underline;">SOURCE</span>... <span style="text-decoration:underline;">DIRECTORY</span>
+       <span style="font-weight:bold;color:#7f7f7f;">cp</span> [<span style="text-decoration:underline;">OPTION</span>]... <span style="text-decoration:underline;">-t</span> <span style="text-decoration:underline;">DIRECTORY</span> <span style="text-decoration:underline;">SOURCE</span>...
+
+<span style="font-weight:bold;color:#7f7f7f;">DESCRIPTION</span>
+       Copy SOURCE to DEST, or multiple SOURCE(s) to DIRECTORY.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       <span style="font-weight:bold;color:#7f7f7f;">-a</span>, <span style="font-weight:bold;color:#7f7f7f;">--archive</span>
+              same as <span style="font-weight:bold;color:#7f7f7f;">-dR</span> <span style="font-weight:bold;color:#7f7f7f;">--preserve</span>=<span style="text-decoration:underline;">all</span>
+
+       <span style="font-weight:bold;color:#7f7f7f;">--attributes-only</span>
+              don&apos;t copy the file data, just the attributes
+
+       <span style="font-weight:bold;color:#7f7f7f;">--backup</span>[=<span style="text-decoration:underline;">CONTROL</span>]
+              make a backup of each existing destination file
+
+       <span style="font-weight:bold;color:#7f7f7f;">-b</span>     like <span style="font-weight:bold;color:#7f7f7f;">--backup</span> but does not accept an argument
+
+       <span style="font-weight:bold;color:#7f7f7f;">--copy-contents</span>
+              copy contents of special files when <span style="color:#000000;background-color:#000000;">recursive</span><span style="color:#000000;background-color:#000000;"></span>
+
+       <span style="font-weight:bold;color:#7f7f7f;">-d</span>     same as <span style="font-weight:bold;color:#7f7f7f;">--no-dereference</span> <span style="font-weight:bold;color:#7f7f7f;">--preserve</span>=<span style="text-decoration:underline;">links</span>
+
+       <span style="font-weight:bold;color:#7f7f7f;">-f</span>, <span style="font-weight:bold;color:#7f7f7f;">--force</span>
+              if  an  existing destination file cannot be opened, remove it and try again
+              (this option is ignored when the <span style="font-weight:bold;color:#7f7f7f;">-n</span> option is also used)
+
+       <span style="font-weight:bold;color:#7f7f7f;">-i</span>, <span style="font-weight:bold;color:#7f7f7f;">--interactive</span>
+              prompt before overwrite (overrides a previous <span style="font-weight:bold;color:#7f7f7f;">-n</span> option)
+
+       <span style="font-weight:bold;color:#7f7f7f;">-H</span>     follow command-line symbolic links in SOURCE
+
+       <span style="font-weight:bold;color:#7f7f7f;">-l</span>, <span style="font-weight:bold;color:#7f7f7f;">--link</span>
+              hard link files instead of copying
+
+       <span style="font-weight:bold;color:#7f7f7f;">-L</span>, <span style="font-weight:bold;color:#7f7f7f;">--dereference</span>
+              always follow symbolic links in SOURCE
+
+       <span style="font-weight:bold;color:#7f7f7f;">-n</span>, <span style="font-weight:bold;color:#7f7f7f;">--no-clobber</span>
+              do not overwrite an existing file (overrides a previous <span style="font-weight:bold;color:#7f7f7f;">-i</span> option)
+
+       <span style="font-weight:bold;color:#7f7f7f;">-P</span>, <span style="font-weight:bold;color:#7f7f7f;">--no-dereference</span>
+              never follow symbolic links in SOURCE
+
+       <span style="font-weight:bold;color:#7f7f7f;">-p</span>     same as <span style="font-weight:bold;color:#7f7f7f;">--preserve</span>=<span style="text-decoration:underline;">mode</span>,ownership,timestamps
+
+       <span style="font-weight:bold;color:#7f7f7f;">--preserve</span>[=<span style="text-decoration:underline;">ATTR_LIST</span>]
+              preserve the specified attributes (default: mode,ownership,timestamps),  if
+              possible additional attributes: context, links, xattr, all
+
+       <span style="font-weight:bold;color:#7f7f7f;">--no-preserve</span>=<span style="text-decoration:underline;">ATTR_LIST</span>
+              don&apos;t preserve the specified attributes
+<span style="color:#000000;background-color:#000000;"> Manual page cp(1) line 28/160 37% (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+
+
+
+</span><span style="color:#000000;background-color:#000000;"> Manual page cp(1) line 26/160 35% (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+              don&apos;t preserve the specified attributes</span>
+<span style="color:#000000;background-color:#000000;"> Manual page cp(1) line 28/160 37% (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+       </span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;">-R</span>, <span style="font-weight:bold;color:#7f7f7f;">-r</span>, <span style="font-weight:bold;color:#7f7f7f;">--</span><span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#000000;background-color:#7f7f7f;">recursive</span><span style="font-weight:bold;color:#7f7f7f;background-color:#000000;"></span>
+              copy directories <span style="color:#000000;background-color:#000000;">recursive</span><span style="color:#000000;background-color:#000000;">ly</span>
+
+       <span style="font-weight:bold;color:#7f7f7f;">--reflink</span>[=<span style="text-decoration:underline;">WHEN</span>]
+              control clone/CoW copies. See below
+
+       <span style="font-weight:bold;color:#7f7f7f;">--remove-destination</span>
+              remove  each  existing  destination file before attempting to open it (con‐
+              trast with <span style="font-weight:bold;color:#7f7f7f;">--force</span>)
+
+       <span style="font-weight:bold;color:#7f7f7f;">--sparse</span>=<span style="text-decoration:underline;">WHEN</span>
+              control creation of sparse files. See below
+
+       <span style="font-weight:bold;color:#7f7f7f;">--strip-trailing-slashes</span>
+              remove any trailing slashes from each SOURCE argument
+
+       <span style="font-weight:bold;color:#7f7f7f;">-s</span>, <span style="font-weight:bold;color:#7f7f7f;">--symbolic-link</span>
+              make symbolic links instead of copying
+
+       <span style="font-weight:bold;color:#7f7f7f;">-S</span>, <span style="font-weight:bold;color:#7f7f7f;">--suffix</span>=<span style="text-decoration:underline;">SUFFIX</span>
+              override the usual backup suffix
+
+       <span style="font-weight:bold;color:#7f7f7f;">-t</span>, <span style="font-weight:bold;color:#7f7f7f;">--target-directory</span>=<span style="text-decoration:underline;">DIRECTORY</span>
+              copy all SOURCE arguments into DIRECTORY
+
+       <span style="font-weight:bold;color:#7f7f7f;">-T</span>, <span style="font-weight:bold;color:#7f7f7f;">--no-target-directory</span>
+              treat DEST as a normal file
+
+       <span style="font-weight:bold;color:#7f7f7f;">-u</span>, <span style="font-weight:bold;color:#7f7f7f;">--update</span>
+              copy only when the SOURCE file is newer than the destination file  or  when
+              the destination file is missing
+
+       <span style="font-weight:bold;color:#7f7f7f;">-v</span>, <span style="font-weight:bold;color:#7f7f7f;">--verbose</span>
+<span style="color:#000000;background-color:#000000;"> Manual page cp(1) line 65/160 58% (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+
+</span><span style="color:#000000;background-color:#000000;"> Manual page cp(1) line 65/160 58% (press h for help or q to quit)</span><span style="color:#000000;background-color:#000000;">
+basilisk.dat  original-basilisk.dat  original-unicorn.dat  unicorn.dat
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ rm original-*
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ ls
+basilisk.dat  unicorn.dat
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ nano save-originals.sh
+(B</span>===(B(B<span style="color:#000000;background-color:#000000;">[ New File ](B</span>(B  GNU nano 2.5.3               File: save-originals.sh                                      ^G(B Get Help    (B^O(B Write Out   (B^W(B Where Is    (B^K(B Cut Text    (B^J(B Justify     (B^C(B Cur Pos(B^X(B Exit(B^R(B Read File   (B^\(B Replace     (B^U(B Uncut Text  (B^T(B To Linter   (B^_(B Go To Line(BModified(Bfo<span style="color:#00cd00;">for</span>(B<span style="background-color:#00cd00;"> </span>(B f<span style="color:#00cd00;">fi</span>(Bfilename<span style="background-color:#00cd00;"> </span>(B i<span style="color:#00cd00;">in</span>(B<span style="background-color:#00cd00;"> </span>(B *.datd<span style="color:#00cd00;">do</span>(B<span style="background-color:#00cd00;"> </span>(B<span style="background-color:#00cd00;"> </span>(B<span style="background-color:#00cd00;"> </span>(B<span style="background-color:#00cd00;"> </span>(B    c(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#5c5cff;">cp</span>(B<span style="background-color:#00cd00;"> </span>(B <span style="color:#00cd00;">$</span>(B(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">$f</span>(B(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">i</span>(B(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">l</span>(B(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">e</span>(B(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">n</span>(B(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">a</span>(B(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">m</span>(B(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">e</span>(B<span style="background-color:#00cd00;"> </span>(B original-<span style="color:#00cd00;">$</span>(B(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">$f</span>(B(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">i</span>(B(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">n</span>(B (B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">l</span>(B(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">e</span>(B(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">n</span>(B(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">a</span>(B(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">m</span>(B(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">e</span>(Bd<span style="color:#00cd00;">do</span>(Bdon<span style="color:#00cd00;">done</span>(B       (B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#5c5cff;">cp</span>(B (B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">$filename</span>(B original-(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">$filename</span>(B  (B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#5c5cff;">cp</span>(B (B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">$filename</span>(B original-(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">$filename</span>(B   (B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#5c5cff;">cp</span>(B (B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">$filename</span>(B original-(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">$filename</span>(B    (B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#5c5cff;">cp</span>(B (B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">$filename</span>(B original-(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">$filename</span>(B  original-(BFile Name to Write: save-originals.sh                                                       (B   (BM-D(B DOS Format    (BM-A(B Append        (BM-B(B Backup File
+basilisk.dat  save-originals.sh  unicorn.dat
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ bash save-originals.sh 
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ ls
+basilisk.dat  original-basilisk.dat  original-unicorn.dat  save-originals.sh  unicorn.dat
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ rm original-*
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ ls
+basilisk.dat  save-originals.sh  unicorn.dat
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ nano save-originals.sh 
+(B===(B(B[ Reading File ](B(B 4 lines(B(B  GNU nano 2.5.3               File: save-originals.sh                                      (B<span style="color:#00cd00;">for</span>(B filename <span style="color:#00cd00;">in</span>(B *.dat<span style="color:#00cd00;">do(B</span><span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#5c5cff;">cp</span>(B (B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">$filename</span>(B original-(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">$filename(B</span><span style="color:#00cd00;">done</span>(B^G(B Get Help    (B^O(B Write Out   (B^W(B Where Is    (B^K(B Cut Text    (B^J(B Justify     (B^C(B Cur Pos(B^X(B Exit(B^R(B Read File   (B^\(B Replace     (B^U(B Uncut Text  (B^T(B To Linter   (B^_(B Go To LineM(BModified(BM<span style="color:#00cdcd;">#</span>(B<span style="color:#00cdcd;">!</span>(B<span style="color:#00cdcd;">/</span>(B <span style="color:#00cdcd;">b</span>(B<span style="color:#00cdcd;">a</span>(B<span style="color:#00cdcd;">s</span>(B<span style="color:#00cdcd;">h</span>(B(BFile Name to Write: save-originals.sh                                                       (B   (BM-D(B DOS Format    (BM-A(B Append        (BM-B(B Backup File
+total 12
+-rw-r--r-- 1 azaghal azaghal 1838 May 15 22:45 basilisk.dat
+-rw-rw-r-- 1 azaghal azaghal   74 May 19 16:28 save-originals.sh
+-rw-r--r-- 1 azaghal azaghal 1833 May 15 22:45 unicorn.dat
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ chmod 
+basilisk.dat  save-originals.sh  unicorn.dat
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ bash 
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ ls -l
+total 12
+-rw-r--r-- 1 azaghal azaghal 1838 May 15 22:45 basilisk.dat
+-rwxrwxr-x 1 azaghal azaghal   74 May 19 16:28 <span style="font-weight:bold;color:#00ff00;">save-originals.sh</span>
+-rw-r--r-- 1 azaghal azaghal 1833 May 15 22:45 unicorn.dat
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ nano
+save-originals.sh: command not found
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ ./save-originals.sh 
+bash: ./save-originals.sh: bash: bad interpreter: No such file or directory
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ nano save-originals.sh 
+(B===(B(B[ Reading File ](B(B 6 lines(B(B  GNU nano 2.5.3               File: save-originals.sh                                      (B<span style="color:#00cdcd;">#!bash</span><span style="color:#00cd00;">for</span>(B filename <span style="color:#00cd00;">in</span>(B *.dat<span style="color:#00cd00;">do(B</span><span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#5c5cff;">cp</span>(B (B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">$filename</span>(B original-(B<span style="font-weight:bold;color:#7f7f7f;"></span><span style="font-weight:bold;color:#ff0000;">$filename(B</span><span style="color:#00cd00;">done</span>(B^G(B Get Help    (B^O(B Write Out   (B^W(B Where Is    (B^K(B Cut Text    (B^J(B Justify     (B^C(B Cur Pos(B^X(B Exit(B^R(B Read File   (B^\(B Replace     (B^U(B Uncut Text  (B^T(B To Linter   (B^_(B Go To Line(BModified(B<span style="color:#00cdcd;">ibash</span>(B<span style="color:#00cdcd;">/bash</span>(B<span style="color:#00cdcd;">bbash</span>(B<span style="color:#00cdcd;">ibash</span>(B<span style="color:#00cdcd;">nbash</span>(B<span style="color:#00cdcd;">/bash</span>(B(BFile Name to Write: save-originals.sh                                                       (B   (BM-D(B DOS Format    (BM-A(B Append        (BM-B(B Backup File
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ ls
+basilisk.dat  original-basilisk.dat  original-unicorn.dat  <span style="font-weight:bold;color:#00ff00;">save-originals.sh</span>  unicorn.dat
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ ls -a -F
+<span style="font-weight:bold;color:#5c5cff;">.</span>/   basilisk.dat           original-unicorn.dat  unicorn.dat
+<span style="font-weight:bold;color:#5c5cff;">..</span>/  original-basilisk.dat  <span style="font-weight:bold;color:#00ff00;">save-originals.sh</span>*
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ ls -aF
+<span style="font-weight:bold;color:#5c5cff;">.</span>/   basilisk.dat           original-unicorn.dat  unicorn.dat
+<span style="font-weight:bold;color:#5c5cff;">..</span>/  original-basilisk.dat  <span style="font-weight:bold;color:#00ff00;">save-originals.sh</span>*
+azaghal&#64;Nogrod:~/session-1/data-shell/creatures$ ls --
+azaghal&#64;Nogrod:~/session-1$ ls
+<span style="font-weight:bold;color:#5c5cff;">Automation</span>  <span style="font-weight:bold;color:#5c5cff;">data-shell</span>  <span style="font-weight:bold;color:#5c5cff;">Python_Visualization</span>
+azaghal&#64;Nogrod:~/session-1$ cd Automation/
+azaghal&#64;Nogrod:~/session-1/Automation$ ls
+notes.md  <span style="font-weight:bold;color:#5c5cff;">part0_manual</span>  <span style="font-weight:bold;color:#5c5cff;">part1_make_intro</span>  <span style="font-weight:bold;color:#5c5cff;">part2_make_recursive</span>
+azaghal&#64;Nogrod:~/session-1/Automation$ exit
+exit
+<span style="color:#00cd00;">~ Asciicast recording finished.</span>
+azaghal&#64;Nogrod:~/session-1$ exit
+exit
+
+Script done on Fri 19 May 2017 04:35:44 PM MDT
+</pre>
+</body>
+</html>
+<!--HTML generated by ansifilter 2.4, http://www.andre-simon.de/-->
