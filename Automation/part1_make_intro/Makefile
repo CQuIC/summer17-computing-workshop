@@ -5,7 +5,7 @@
 # We need to run the simulation, before we perform the statistics.
 # We need to perform statistics, before we can prepare graphics.
 # Before writing the Makefile, draw a dependency flow chart showing
-# the different stpdf in the computation and their dependencies.
+# the different steps in the computation and their dependencies.
 
 # Each step is called a target, and everything it depends on it called
 # a dependency
