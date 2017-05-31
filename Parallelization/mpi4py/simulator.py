@@ -168,8 +168,6 @@ def main():
     #(set root=0) and set them to be some local variable
     my_ps = comm.scatter(ps, root=0)
 
-    #For debugging: Print process rank and chunk
-    print('Hello from {0} - I have these values : {1}'.format(rank, my_ps))
     #Now, call data_gen!
     data_gen(my_ps)
 
