@@ -120,6 +120,11 @@ def data_gen(ps):
 def chunks(l, numChunks):
     r"""Yield numChunks chunks from l.
 
+    If the number of chunks doesn't evenly divide
+    the length of l, this function will return
+    (numChunks - 1) chunks of the same length,
+    and one chunk whose length is longer.
+
     Inputs
     ------
     l: A list or numpy array to chunk
@@ -131,16 +136,11 @@ def chunks(l, numChunks):
     A generator object which yields chunks from l.
     """
     chunkSize = int(np.floor(len(l) / numChunks))
-
-    if len(l) % numChunks == 0:
-        for i in range(0, len(l), chunkSize):
-            yield l[i:i + chunkSize]
-    else:
-        for i in range(0, numChunks):
-            if i < numChunks - 1:
-                yield l[i * chunkSize :(i + 1) * chunkSize]
-            else:
-                yield l[i * chunkSize:]
+    for i in range(0, numChunks):
+        if i < numChunks - 1:
+            yield l[i * chunkSize :(i + 1) * chunkSize]
+        else:
+            yield l[i * chunkSize:]
 
 def main():
 
