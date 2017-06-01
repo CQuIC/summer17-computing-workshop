@@ -147,17 +147,28 @@ def main():
     #Instantiate MPI.COMM_WORLD,
     #and use Get_rank(), Get_size()
     #to get rank and size.
+    comm = MPI.COMM_WORLD
+    rank = comm.Get_rank()
+    size = comm.Get_size()
 
     #Conditional logic - if the rank is 0,
     #generate a list of values for p,
     #shuffle them, and then chunk.
     #If rank is not zero, set values of p to "None"
+    if rank == 0:
+        ps = [0, .1, .2, .3, .4, .5, .6, .7, .8, .9, 1]
+        np.random.shuffle(ps)
+
+        ps = chunks(ps, size)
+    else:
+        ps = None
 
     #Use the scatter() method to scatter the chunks
     #(set root=0) and set them to be some local variable
+    my_ps = comm.scatter(ps, root=0)
 
     #Now, call data_gen!
-
+    data_gen(my_ps)
 
 if __name__ == '__main__':
     main()
